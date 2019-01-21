@@ -1,3 +1,4 @@
 # Doc
 [C#](C%23/index)
-[SQL Server](SQL20%Server/index)
+
+[SQL Server](SQL%20Server/index)
