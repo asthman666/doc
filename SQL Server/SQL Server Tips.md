@@ -11,10 +11,15 @@ For example, with SQL, it would be instructions such as create table, alter tabl
 
 For example, with SQL, it would be instructions such as insert, update, delete, ...    
 
-### Escape single quotes in SQL 'LIKE' command
+### Escape single quotes
 
     SELECT TOP 1 * FROM Customer WHERE LastName LIKE '%''%';
+    SELECT * FROM Customer WHERE LastName = 'O''Leary';
 
+### [Like](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/like-transact-sql?view=sql-server-2017) regex
+
+    SELECT * FROM Customer WHERE CustomerID LIKE '1[0-9]%';
+    
 ### System
 
     -- Find SQLServer Version
