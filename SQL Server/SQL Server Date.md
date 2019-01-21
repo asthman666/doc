@@ -1,4 +1,4 @@
-# [SQL Server Date](http://asthman.me/article/137)
+# SQL Server Date
 
 ### Subtract one day from datetime
 

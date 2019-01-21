@@ -1,4 +1,4 @@
-# [sql server Tips](http://asthman.me/article/123)
+# sql server Tips
 
 ### Concept
 
