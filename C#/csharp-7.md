@@ -13,46 +13,48 @@
 
     Tuples are most useful as return types for **private** and **internal** methods. Tuples provide a simple syntax for those methods to return multiple discrete values: You save the work of authoring a class or a struct that defines the type returned. There is no need for creating a new type.
 
+    **The new tuples features require the ValueTuple types. You must add the NuGet package System.ValueTuple in order to use it on platforms that do not include the types.**
+
     Using tuples in this way offers several advantages:
 
     You save the work of authoring a class or a struct that defines the type returned.
     You do not need to create new type.
     The language enhancements removes the need to call the Create<T1>(T1) methods.
 
-    class Program
-    {
-        static (int Min, int Max) getMinMax(int[] numbers)
+        class Program
         {
-            int min = int.MaxValue;
-            int max = int.MinValue;
-            foreach (var n in numbers)
+            static (int Min, int Max) getMinMax(int[] numbers)
             {
-                min = (n < min) ? n : min;
-                max = (n > max) ? n : max;
+                int min = int.MaxValue;
+                int max = int.MinValue;
+                foreach (var n in numbers)
+                {
+                    min = (n < min) ? n : min;
+                    max = (n > max) ? n : max;
+                }
+                return (min, max);
             }
-            return (min, max);
-        }
 
-        static void Main(string[] args)
-        {
-            var letters = ("a", "b");
-            Console.WriteLine($"{letters.Item1}");
-            Console.WriteLine($"{letters.Item2}");
+            static void Main(string[] args)
+            {
+                var letters = ("a", "b");
+                Console.WriteLine($"{letters.Item1}");
+                Console.WriteLine($"{letters.Item2}");
 
-            var named = (Answer: 42, Message: "The meaning of life");
-            Console.WriteLine($"{named.Answer}");
-            Console.WriteLine($"{named.Message}");
+                var named = (Answer: 42, Message: "The meaning of life");
+                Console.WriteLine($"{named.Answer}");
+                Console.WriteLine($"{named.Message}");
 
-            (string Alpha, string Beta) namedLetters = ("a", "b");
-            Console.WriteLine($"{namedLetters.Alpha}");
-            Console.WriteLine($"{namedLetters.Beta}");
+                (string Alpha, string Beta) namedLetters = ("a", "b");
+                Console.WriteLine($"{namedLetters.Alpha}");
+                Console.WriteLine($"{namedLetters.Beta}");
 
-            (int A, string M) = named;
-            var minMax = getMinMax(new int[] { 1,2,3 });
-            (int min, int max) = getMinMax(new int[] { 1,2,3 });
+                (int A, string M) = named;
+                var minMax = getMinMax(new int[] { 1,2,3 });
+                (int min, int max) = getMinMax(new int[] { 1,2,3 });
 
-            Console.ReadKey();
-        }
+                Console.ReadKey();
+            }
     }
 
 3. [Discard](https://docs.microsoft.com/en-us/dotnet/csharp/discards)

@@ -7,3 +7,5 @@
 [static](static)
 
 [sealed](sealed)
+
+[Delegate](Delegate)
