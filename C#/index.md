@@ -9,3 +9,5 @@
 [sealed](sealed)
 
 [Delegate](Delegate)
+
+[interface or class](interface or class)
