@@ -3,3 +3,5 @@
 [Index](SQL Server index)
 
 [Tips](SQL Server Tips)
+
+[Tips](SQL Server Temp Table)
