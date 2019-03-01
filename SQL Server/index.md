@@ -4,4 +4,4 @@
 
 [Tips](SQL Server Tips)
 
-[Tips](SQL Server Temp Table)
+[Temp Table](SQL Server Temp Table)
