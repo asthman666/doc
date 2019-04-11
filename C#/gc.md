@@ -58,9 +58,12 @@ CLR 初始化垃圾回收器，它会分配一段内存用来存储和管理对�
 
 这一代包含长活对象。例如一个长活对象是一个应用中包含静态数据的对象，它在进程中一直存活。
 
-Collecting a generation means collecting objects in that generation and all its younger generations. A generation 2 garbage collection is also known as a full garbage collection, because it reclaims all objects in all generations (that is, all objects in the managed heap).
+Collecting a generation means collecting objects in that generation and all its younger generations. 
 
 第二代垃圾收集也被叫做全垃圾收集(full garbage collection)，因为它回收所有代上的死对象。
 
+## 一个线程触发垃圾收集会引起其他线程被挂起
+
+<img src='https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/media/gc-triggered.png'>
 
 > [garbage collection fundamentals](https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals)
