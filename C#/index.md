@@ -1,5 +1,7 @@
 [code](code/index)
 
+[struct vs class](struct vs class)
+
 [Just In Time](jit)
 
 [gc](gc)
