@@ -2,6 +2,10 @@
 
 [aspdotnet](aspdotnet/index)
 
+[collection](collection)
+
+[dictionary](dictionary)
+
 [struct vs class](struct vs class)
 
 [Just In Time](jit)
