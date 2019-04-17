@@ -4,6 +4,7 @@
     Object -> System.Console(static class)
     Object -> System.Random(class)
     Object -> System.Exception(class)
+    Object -> System.Array(abstract class)
     
     Object -> ValueType(abstract class)
 
@@ -15,6 +16,7 @@
     Object -> ValueType -> System.DateTime(struct)
     Object -> ValueType -> System.TimeSpan(struct)
     Object -> ValueType -> System.ValueTuple(struct)
+    Object -> ValueType -> KeyValuePair<TKey,TValue>(struct)
 
 
 * 所有的结构都是System.ValueType的直接派生类， System.ValueType又直接从System.Object派生
@@ -23,7 +25,7 @@
 
 * 所有的枚举都从System.Enum派生
 
-
+* 所有的数组继承System.Array，System.Array是类，所以int[], string[]继承System.Array，所以它们都是引用类型
 
 
 > [Object](https://docs.microsoft.com/en-us/dotnet/api/system.object?view=netframework-4.7.2)
