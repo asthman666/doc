@@ -13,3 +13,5 @@
 > [classes-and-structs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/)
 
 > [choosing-between-class-and-struct](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/choosing-between-class-and-struct)
+
+> [types](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/)
