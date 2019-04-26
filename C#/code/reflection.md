@@ -40,6 +40,10 @@
                 {
                     Console.WriteLine(String.Format("property: {0}, value: {1}", pp.Name, pp.GetValue(p)));                
                 }
+                
+                foreach ( var ff in p.GetType().GetFields() ) {
+                
+                }
 
                 var p2 = (Person)Activator.CreateInstance(p.GetType()); // Person class must has the no params construct
                 p2.Name = "beata";
