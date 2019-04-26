@@ -28,6 +28,7 @@
         {
             static void Main(string[] args)
             {
+                Console.WriteLine(Assembly.GetExecutingAssembly());
                 Console.WriteLine(typeof(String).Assembly.FullName);
                 Console.WriteLine(typeof(String).Namespace);
 
