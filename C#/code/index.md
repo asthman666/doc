@@ -1,3 +1,5 @@
+[hashcode and dictionary](hashcode and dictionary)
+
 [string](string)
 
 [check null or empty](check null or empty)

@@ -136,7 +136,11 @@
                 }
             }
             return sum;
-        }        
+        }
+
+    Example:
+
+    [is pattern in .net core](https://github.com/dotnet/corefx/blob/master/src/System.ComponentModel.Annotations/src/System/ComponentModel/DataAnnotations/EmailAddressAttribute.cs)
 
 5. Ref locals and returns
 

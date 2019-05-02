@@ -1,3 +1,5 @@
-[prototype](proto)
+[strict](strict)
+
+[prototype](prototype)
 
 [jquery](jquery)
