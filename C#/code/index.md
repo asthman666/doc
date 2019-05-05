@@ -1,3 +1,7 @@
+[extern](extern)
+
+[throw or throw arg](throw or throw arg)
+
 [hashcode and dictionary](hashcode and dictionary)
 
 [string](string)
