@@ -1,6 +1,6 @@
 [code](code/index)
 
-[CLR via C#](CLR via C%23)
+[CLR via C#](CLR via C%23/index)
 
 [Develop Command](Develop Command/index)
 
