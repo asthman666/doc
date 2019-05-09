@@ -11,9 +11,13 @@
         // use $ here
     });
 
+    // window onload event
     $( window ).load(function () { ... })
 
     $( window ).on( "load", function() { ... })
+
+    // window resize event
+    $(window).resize(function () {})
 
     (function () {
         ...
