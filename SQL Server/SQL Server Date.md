@@ -21,5 +21,13 @@ DATEDIFF ( [day|hour|minute|second|millisecond] , startdate , enddate )
 
 ### [DATEPART](https://docs.microsoft.com/en-us/sql/t-sql/functions/datepart-transact-sql)
 
+This function returns an integer representing the specified datepart of the specified date.
+
     SELECT DATEPART(YEAR, GETDATE())
     select DATEPART(dd, GETDATE())
+
+### [MONTH](https://docs.microsoft.com/en-us/sql/t-sql/functions/month-transact-sql)
+
+Returns an integer that represents the month of the specified date.
+
+    MONTH ( date )
