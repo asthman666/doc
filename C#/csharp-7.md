@@ -9,6 +9,8 @@
 
         return result;
 
+    [example](code/out)        
+
 2. [Tuple](https://docs.microsoft.com/en-us/dotnet/csharp/tuples)
 
     Tuples are most useful as return types for **private** and **internal** methods. Tuples provide a simple syntax for those methods to return multiple discrete values: You save the work of authoring a class or a struct that defines the type returned. There is no need for creating a new type.
