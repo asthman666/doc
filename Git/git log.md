@@ -12,6 +12,8 @@
 
 `git log -p <sha1>`
 
+`git branch -a -v --no-abbrev --contains '368a27180016908edd44fae8b2cef01184207331'`
+
 > [gitrevisions](https://www.git-scm.com/docs/gitrevisions)
 
 > [pull vs fetch](https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch)

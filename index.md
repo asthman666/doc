@@ -10,3 +10,5 @@
 [HTML](HTML/index)
 
 [Git](Git/index)
+
+[Life](Life/index)
