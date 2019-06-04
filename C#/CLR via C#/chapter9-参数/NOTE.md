@@ -53,3 +53,35 @@
 ## 传递引用
 
 CLR默认所有的方法参数都传值
+
+## 传递可变数量的参数
+
+    static int Add(params int[] values) {
+        int sum = 0;
+        if (values != null) 
+        {
+            foreach ( var i in values ) 
+            {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+
+    static void Main() {
+        Add(1,2,3); // 编译器会构造和初始化一个数组来容纳这些实参，会构造 new int[3]{1,2,3}
+        Add(); // new int[0]
+        Add(null); // 不会分配数组
+    }
+
+因为分配数组，数组在堆上分配，数组元素必须初始化，堆上数据会垃圾回收，因此对性能有一定的影响。可以考虑定义几个没有使用`params`关键字的重载方法。例如System.String的Concat方法。
+
+## 参数和返回类型的规范
+
+声明方法参数类型时，应尽量指定最弱的类型。
+
+`IEnumerable<T>`, `IList<T>`, `ICollection<T>`, `List<T>`
+
+一般将方法的返回类型声明为最强的类型，确保调用者使用方法返回值时的适用范围更大。
+
+有时在不影响调用者的前提下修改方法的内部实现，可以选择一个较弱的返回类型。 `IList<T>` -> `ICollection<T>` -> `IEnumerable<T>`，如果一个方法返回`List<String>`，考虑到以后可能返回`String[]`，可以考虑将方法的返回值修改为`IList<string>`。
