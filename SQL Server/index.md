@@ -9,3 +9,5 @@
 [Index](SQL Server index)
 
 [Tips](SQL Server Tips)
+
+[SQL Server Property](SQL Server Property)
