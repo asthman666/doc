@@ -4,6 +4,8 @@
 
 [Develop Command](Develop Command/index)
 
+[Tuple or ValueTuple](Tuple or ValueTuple)
+
 [aspdotnet](aspdotnet/index)
 
 [collection](collection)
