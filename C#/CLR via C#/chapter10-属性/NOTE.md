@@ -62,5 +62,16 @@ Automatically Implemented Property(AIP)
 
 属性的编译时inline的?
 
+
+	class Person
+	{
+		public string Name { get; set; } = "World";
+		public string Age { get; set; }
+
+		public static string Type { get; set; } = "mammal";
+	}
+
+<img src="property IL.png">
+
 ## 有参属性
 
