@@ -11,3 +11,5 @@
 [Tips](SQL Server Tips)
 
 [SQL Server Property](SQL Server Property)
+
+[SQL Server Compare](SQL Server Compare)
