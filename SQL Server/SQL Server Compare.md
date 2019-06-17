@@ -9,6 +9,11 @@
     GO
     drop table #tmp
 
-<img src="len.png">    
+<img src="len.PNG">    
 
 > [How SQL Server compares strings with trailing spaces](https://support.microsoft.com/en-us/help/316626/inf-how-sql-server-compares-strings-with-trailing-spaces)
+
+> [DATALENGTH](https://docs.microsoft.com/en-us/sql/t-sql/functions/datalength-transact-sql)
+
+> [LEN](https://docs.microsoft.com/en-us/sql/t-sql/functions/len-transact-sql)
+

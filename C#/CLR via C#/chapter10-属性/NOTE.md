@@ -71,7 +71,7 @@ Automatically Implemented Property(AIP)
 		public static string Type { get; set; } = "mammal";
 	}
 
-<img src="property IL.png">
+<img src="property IL.PNG">
 
 ## 有参属性
 
