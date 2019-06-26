@@ -12,8 +12,17 @@
 
 `git log -p <sha1>`
 
-`git branch -a -v --no-abbrev --contains '368a27180016908edd44fae8b2cef01184207331'`
+`git branch -a -v --no-abbrev --contains 368a27180016908edd44fae8b2cef01184207331`
+
+`git show --pretty="" --name-only 368a27180016908edd44fae8b2cef01184207331`
+
+`git checkout --ours -- path/to/conflicted-file.txt`
+
+`git checkout --theirs -- path/to/conflicted-file.txt`
 
 > [gitrevisions](https://www.git-scm.com/docs/gitrevisions)
 
 > [pull vs fetch](https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch)
+
+> [resolving a git conflict with binary files](https://stackoverflow.com/questions/278081/resolving-a-git-conflict-with-binary-files)
+
