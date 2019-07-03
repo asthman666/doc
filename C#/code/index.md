@@ -15,3 +15,5 @@
 [struct](struct)
 
 [httpclient proxy](httpclient proxy)
+
+[case sensitive](case sensitive)

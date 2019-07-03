@@ -6,4 +6,10 @@
 
 [chapter7-常量和字段](chapter7-常量和字段/NOTE)
 
+[chapter8-方法](chapter8-方法/NOTE)
+
 [chapter9-参数](chapter9-参数/NOTE)
+
+[chapter10-属性](chapter10-属性/NOTE)
+
+[chapter14-字符字符串和文本处理](chapter14-字符字符串和文本处理/NOTE)
