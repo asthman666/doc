@@ -1,3 +1,7 @@
+[chapter1-CLR的执行模式](chapter1-CLR的执行模式/NOTE)
+
+[chapter2-共享程序集和强命名程序集](chapter2-共享程序集和强命名程序集/NOTE)
+
 [chapter4-类型基础](chapter4-类型基础/NOTE)
 
 [chapter5-类型](chapter5-类型/NOTE)
