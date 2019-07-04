@@ -79,3 +79,21 @@ JIT 编译器将本机CPU指令存储到动态内存中。这意味着一旦应�
 
 CTS Common Type System
 
+## 公共语言规范
+
+CLS Common Language Specification
+
+CLR/CTS提供了一个功能集，如果开发人员用IL汇编语言写程序，可以使用CLR/CTS提供的全部功能。但是，其他大多数语言（C#，VB和Fortran）只向开发人员公开了CLR/CTS的一个功能自己。CLS定义了所有语言都必须支持的最小功能集。
+
+`[assembly: CLSCompliant(true)]` 应用于程序集，告诉编译器检查其中的任何公开类型，确保构造的类型可以从其他编程语言中访问
+
+## 与非托管代的互操作性
+
+* 托管代码能调用DLL中的非托管函数
+
+例如，C#应用程序可调用从Kernel32.dll到处的CreateSemapore函数
+
+* 托管代码可以使用现有的COM组件（服务器）
+
+* 非托管代码可以使用托管类型（服务器）
+
