@@ -58,5 +58,24 @@ C#编译器开关
 
 Visual Studio默认是 `+full`，有选项可以配置
 
+为了执行方法，首先必须把方法的IL转换成本机CPU指令，这是CLR的JIT编译器的职责
 
+JIT 编译器将本机CPU指令存储到动态内存中。这意味着一旦应用程序终止，编译好的代码也会被丢弃
+
+## Framework类库
+
+部分常规的FCL的命名空间
+
+* **System**  包含每个应用程序都要用到的所有的基本类型
+* **System.Data** 包含用于和数据库通信以及处理数据的类型
+* **System.IO** 包含用于执行流I/O以及浏览目录/文件的类型
+* **System.Net** 包含进行低级网路通信，并与一些常用的Internet协议协作的类型
+* **System.Security** 包含用户保护数据和资源的类型
+* **System.Text** 包含处理各种编码文本的类型
+* **System.XML** 包含用户处理XML架构和数据的类型
+* **System.Threading** 包含用于异步操作和同步资源访问的类型
+
+## 通用类型系统
+
+CTS Common Type System
 
