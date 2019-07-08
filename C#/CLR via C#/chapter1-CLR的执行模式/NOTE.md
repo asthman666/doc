@@ -30,11 +30,11 @@ CLR (Common Language Runtime)是一个可由多种编程语言使用的"运行�
 
 ### PE 文件转换出IL语言
 
-    [ildasm](/doc/Develop Command/ildasm.exe)
+[ildasm](/doc/Develop Command/ildasm.exe)
 
 ### IL 语言转为 PE 文件
 
-    [ilasm](/doc/Develop Command/ilasm.exe)
+[ilasm](/doc/Develop Command/ilasm.exe)
 
 ### 元数据的用途
 

@@ -1,6 +1,8 @@
 [chapter1-CLR的执行模式](chapter1-CLR的执行模式/NOTE)
 
-[chapter2-共享程序集和强命名程序集](chapter2-共享程序集和强命名程序集/NOTE)
+[chapter2-生成，打包，部署和管理应用程序及类型](chapter2-生成，打包，部署和管理应用程序及类型/NOTE)
+
+[chapter3-共享程序集和强命名程序集](chapter3-共享程序集和强命名程序集/NOTE)
 
 [chapter4-类型基础](chapter4-类型基础/NOTE)
 
