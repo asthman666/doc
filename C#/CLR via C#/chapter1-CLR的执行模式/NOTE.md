@@ -1,5 +1,7 @@
 ## 将源代码编译成托管模块
 
+[CLR version](https://docs.microsoft.com/en-us/dotnet/standard/clr#clr-versions)
+
 CLR (Common Language Runtime)是一个可由多种编程语言使用的"运行时"
 
 只要编译器是面向CLR的，就可以用CLR运行
@@ -25,6 +27,14 @@ CLR (Common Language Runtime)是一个可由多种编程语言使用的"运行�
 4. IL 代码
 
     编译器编译源代码时生成的代码，在运行时，CLR将IL编译成本机的指令
+
+### PE 文件转换出IL语言
+
+    [ildasm](../../Develop Command/ildasm.exe)
+
+### IL 语言转为 PE 文件
+
+    [ilasm](../../Develop Command/ilasm.exe)
 
 ### 元数据的用途
 
