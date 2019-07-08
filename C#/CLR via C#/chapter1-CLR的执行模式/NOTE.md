@@ -30,11 +30,11 @@ CLR (Common Language Runtime)是一个可由多种编程语言使用的"运行�
 
 ### PE 文件转换出IL语言
 
-    [ildasm](../../Develop Command/ildasm.exe)
+    [ildasm](/doc/Develop Command/ildasm.exe)
 
 ### IL 语言转为 PE 文件
 
-    [ilasm](../../Develop Command/ilasm.exe)
+    [ilasm](/doc/Develop Command/ilasm.exe)
 
 ### 元数据的用途
 
@@ -87,7 +87,7 @@ JIT 编译器将本机CPU指令存储到动态内存中。这意味着一旦应�
 
 ## 通用类型系统
 
-CTS Common Type System
+[CTS Common Type System](https://docs.microsoft.com/en-us/dotnet/standard/base-types/common-type-system)
 
 ## 公共语言规范
 
