@@ -30,11 +30,11 @@ CLR (Common Language Runtime)是一个可由多种编程语言使用的"运行�
 
 ### PE 文件转换出IL语言
 
-[ildasm](/doc/Develop Command/ildasm.exe)
+[ildasm](/doc/C%23/Develop Command/ildasm.exe)
 
 ### IL 语言转为 PE 文件
 
-[ilasm](/doc/Develop Command/ilasm.exe)
+[ilasm](/doc/C%23/Develop Command/ilasm.exe)
 
 ### 元数据的用途
 
@@ -62,7 +62,7 @@ windows检查EXE文件头，决定是创建32位还是64位进程后，会在进
 
 C#编译器开关
 
-`/optimize` 
+`/optimize`
 
 `/debug` 指定/debug(+full/pdbonly)开关，编译器才会生成Program Database(PDB)文件. PDB文件帮助调试器查找局部变量并将IL指令映射到源代码.
 
@@ -106,4 +106,3 @@ CLR/CTS提供了一个功能集，如果开发人员用IL汇编语言写程序�
 * 托管代码可以使用现有的COM组件（服务器）
 
 * 非托管代码可以使用托管类型（服务器）
-
