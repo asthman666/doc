@@ -1,3 +1,5 @@
+[git thought](git thought)
+
 [git push](git push)
 
 [git log](git log)

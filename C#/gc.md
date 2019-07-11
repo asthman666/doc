@@ -20,9 +20,9 @@
 
 ## 垃圾收集的条件
 
-* 系统内存很小。
+* 系统内存很小。CLR内部使用 Win32 函数 CreateMemoryResourceNotification 和 QueryMemoryResourceNotification 监视系统的总体内存使用情况。如果Windows报告低内存，CLR将强制垃圾回收以释放死对象。
 
-* 托管堆上的内存使用超过了阈值。这个阈值会随着进程的运行不断的调整。
+* 托管堆上的内存使用超过了阈值。这个阈值会随着进程的运行不断的调整。CLR在检测第0代超过预算时触发一次GC，这是GC最常见的触发条件。
 
 * 调用 `GC.Collect` 方法。
 
@@ -36,7 +36,7 @@ CLR 初始化垃圾回收器，它会分配一段内存用来存储和管理对�
 
 当垃圾收集被触发，垃圾收集器会回收被死对象占据的内存。这个回收过程会把活对象紧凑的移动到一起，确保分配在受管理堆上的对象在一起。
 
-堆可以被认为堆积成两个堆，大对象堆和小对象堆。
+堆可以被认为堆积成两个堆，**大对象堆**和**小对象堆**。
 
 ## Generations
 
@@ -67,3 +67,5 @@ Collecting a generation means collecting objects in that generation and all its 
 <img src='https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/media/gc-triggered.png'>
 
 > [garbage collection fundamentals](https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals)
+
+> [large-object-heap](https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/large-object-heap)
