@@ -48,6 +48,27 @@
 
         git remote
 
+* set upstream for local branch, [set upstream](https://git-scm.com/docs/git-push#Documentation/git-push.txt---set-upstream)
+
+        git push -u origin Bug_AFB-8908
+
+* set branch upstream when exists remote branch, [branch set upstream](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--ultupstreamgt)
+
+        git branch --set-upstream-to origin/Bug_AFB-8908
+
+* read hint careful
+
+        $ git branch --set-upstream-to origin/branch_name
+        error: the requested upstream branch 'origin/branch_name' does not exist
+        hint:
+        hint: If you are planning on basing your work on an upstream
+        hint: branch that already exists at the remote, you may need to
+        hint: run "git fetch" to retrieve it.
+        hint:
+        hint: If you are planning to push out a new local branch that
+        hint: will track its remote counterpart, you may want to use
+        hint: "git push -u" to set the upstream config as you push.
+
 [delete git branch locally and remotely](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely)
 
 [find out branch is tracking](https://stackoverflow.com/questions/171550/find-out-which-remote-branch-a-local-branch-is-tracking/9753364)
