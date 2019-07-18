@@ -21,6 +21,22 @@
 
     DROP TABLE #MyTable_tmp
 
+### loop temp table
+
+    select top 10 *, ROW_NUMBER() over (order by primary_key desc) NUM into #tmptable from [db_name].[dbo].[table_name] order by primary_key desc
+
+    WHILE (SELECT COUNT(*) From #tmptable) > 0
+    BEGIN 
+        SELECT TOP 1 @NUM = NUM FROM #tmptable
+
+        -- process logic begin
+
+        -- process logic end
+
+        Delete #tmptable Where NUM = @NUM
+    END
+    DROP TABLE #tmptable    
+
 > [What is the equivalent of 'CREATE TABLE … LIKE …" in SQL Server](https://stackoverflow.com/questions/616104/what-is-the-equivalent-of-create-table-like-in-sql-server)
 
 > [explicit-value-for-the-identity-column](https://stackoverflow.com/questions/2005437/an-explicit-value-for-the-identity-column-in-table-can-only-be-specified-when-a)    
