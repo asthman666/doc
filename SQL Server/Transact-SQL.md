@@ -75,6 +75,10 @@ CONVERT
 
     CONVERT(INT, '1')
 
+    CONVERT(VARCHAR, GETDATE())
+
+    CONVERT(VARCHAR, GETDATE(), 126)
+
 RTRIM 
 
 Returns a character string after truncating all trailing spaces.
