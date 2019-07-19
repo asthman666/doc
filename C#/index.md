@@ -2,6 +2,8 @@
 
 [CLR via C#](CLR via C%23/index)
 
+[.NET blog](.NET blog/index)
+
 [Develop Command](Develop Command/index)
 
 [Tuple or ValueTuple](Tuple or ValueTuple)
