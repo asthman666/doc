@@ -8,6 +8,60 @@
 
 * `catch`的顺序是优先更具体的exception。如果后面的`catch`永远不会执行，编译器会报错。
 
+### Exception filters
+
+    catch (InvalidCastException e) when (e.Data != null) 
+    {
+        // Take some action.
+    }
+
+### You can catch one exception and throw a different exception
+
+    catch (InvalidCastException e) 
+    {
+        // Perform some action here, and then throw a new exception.
+        throw new YourCustomException("Put your error message here.", e);
+    }
+
+### You can also re-throw an exception when a specified condition is true, as shown in the following example.
+
+    catch (InvalidCastException e)
+    {
+        if (e.Data == null)
+        {
+            throw;
+        }
+        else
+        {
+            // Take some action.
+        }
+    }
+
+### same as previous example
+
+    catch (InvalidCastException e) when (e.Data != null) 
+    {
+        // Take some action.
+    }
+
+### From inside a try block, initialize only variables that are declared therein
+
+    static void Main() 
+    {
+        int n;
+        try 
+        {
+            // Do not initialize this variable here.
+            n = 123;
+        }
+        catch
+        {
+        }
+        // Error: Use of unassigned local variable 'n'.
+        Console.Write(n);
+    }
+
+[try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch)
 
 [throw](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/throw)
 
