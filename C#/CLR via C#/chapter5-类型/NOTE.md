@@ -68,3 +68,5 @@ dynamic 其实就是 Object
 * 类型的实例较大（大于16个字节），但不作为方法实参传递，也不从方法返回
 
 值类型的主要优势是不作为对象在托管堆上分配
+
+[structs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-structs)
