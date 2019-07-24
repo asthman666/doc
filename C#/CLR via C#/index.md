@@ -19,3 +19,13 @@
 [chapter10-属性](chapter10-属性/NOTE)
 
 [chapter14-字符字符串和文本处理](chapter14-字符字符串和文本处理/NOTE)
+
+[chapter20-异常和状态管理](chapter20-异常和状态管理/NOTE)
+
+[chapter23-程序集加载和反射](chapter23-程序集加载和反射/NOTE)
+
+[chapter24-运行时的序列化](chapter24-运行时的序列化/NOTE)
+
+[chapter26-线程基础/NOTE](chapter26-线程基础/NOTE)
+
+[chapter27-计算限制的异步操作](chapter27-计算限制的异步操作/NOTE)
