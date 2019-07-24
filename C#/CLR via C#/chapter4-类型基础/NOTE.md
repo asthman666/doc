@@ -43,6 +43,16 @@ class Employee : System.Object { ... }
 
 4. 调用类型的构造器
 
+`new` 执行了所有这些操作之后，返回指向新建对象的一个引用（或指针）。
+
+**NOTE:**
+
+如果一个引用类型，没有使用`new`初始化，就不会从托管堆上分配内存，例如：
+
+    sting str = null
+
+> [null](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/null)    
+
 ## 类型转换
 
 CLR最重要的特性之一是**类型安全**

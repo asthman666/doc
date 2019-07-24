@@ -6,7 +6,7 @@
 
 [chapter4-类型基础](chapter4-类型基础/NOTE)
 
-[chapter5-类型](chapter5-类型/NOTE)
+[chapter5-基元类型，引用类型和值类型](chapter5-基元类型，引用类型和值类型/NOTE)
 
 [chapter6-类型和成员基础](chapter6-类型和成员基础/NOTE)
 

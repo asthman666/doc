@@ -69,4 +69,8 @@ dynamic 其实就是 Object
 
 值类型的主要优势是不作为对象在托管堆上分配
 
+If you instantiate a struct object using the default, parameterless constructor, all members are assigned according to their default values.
+
+When writing a constructor with parameters for a struct, you must explicitly initialize all members; otherwise one or more members remain unassigned and the struct cannot be used, producing compiler error CS0171.
+
 [structs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-structs)
