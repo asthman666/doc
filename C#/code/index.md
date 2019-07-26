@@ -1,3 +1,5 @@
+[Design Pattern](Design Pattern/index)
+
 [out](out)
 
 [extern](extern)
