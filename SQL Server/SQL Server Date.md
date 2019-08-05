@@ -24,7 +24,14 @@ DATEDIFF ( [day|hour|minute|second|millisecond] , startdate , enddate )
 This function returns an integer representing the specified datepart of the specified date.
 
     SELECT DATEPART(YEAR, GETDATE())
-    select DATEPART(dd, GETDATE())
+    SELECT DATEPART(dd, GETDATE())
+
+### Date Part only from DateTime
+
+    SELECT CONVERT(DATE, GETDATE())
+
+> [how-to-get-date-part-only-from-datetime-in-sql-server](https://sqlhints.com/2013/07/14/how-to-get-date-part-only-from-datetime-in-sql-server/)    
+> [how-to-return-only-the-date-from-a-sql-server-datetime-datatype](https://stackoverflow.com/questions/113045/how-to-return-only-the-date-from-a-sql-server-datetime-datatype)
 
 ### [MONTH](https://docs.microsoft.com/en-us/sql/t-sql/functions/month-transact-sql)
 
