@@ -20,6 +20,8 @@
 
 [chapter14-字符字符串和文本处理](chapter14-字符字符串和文本处理/NOTE)
 
+[chapter16-数组](chapter16-数组/NOTE)
+
 [chapter20-异常和状态管理](chapter20-异常和状态管理/NOTE)
 
 [chapter23-程序集加载和反射](chapter23-程序集加载和反射/NOTE)
