@@ -6,6 +6,6 @@
 
 [prototype](prototype)
 
-[jquery](jquery)
+[jQuery](jQuery/index)
 
 [ES6](ES6/index)
