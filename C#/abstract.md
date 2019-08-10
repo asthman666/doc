@@ -22,6 +22,12 @@ System.Web.Mvc 命名空间 中的 Controller 类就是一个抽象类，但是�
 
     public abstract void MyMethod();  
 
+* 抽象属性的定义
+
+    public abstract string MyProperty { get; }
+
+> [code example](code/abstract)    
+
 * 实现抽象方法用 `override`
 
 * 抽象方法不能用 `static` 或者 `virtual` 修饰
