@@ -6,3 +6,16 @@
 
     string[,,] myStrings = new String(10,2,5);
 
+### 初始化数组
+
+    String[] names = new String[] {"Beata", "Noah"};
+
+    var countries = new String[] {"China", "USA"};
+
+    var cities = new[] {"Beijing", "ShangHai", "HongKong"};
+
+    String[] brands = {"Nike", "Starbuck"};
+
+### 数组转型
+
+
