@@ -22,6 +22,6 @@
 
 > [events_order](https://www.quirksmode.org/js/events_order.html#link4)
 
-> [](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)
+> [addEventListener](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)
 
-> [](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)
+> [removeEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)

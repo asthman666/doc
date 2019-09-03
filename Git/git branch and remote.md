@@ -56,6 +56,16 @@
 
         git branch --set-upstream-to origin/Bug_AFB-8908
 
+* rename branch
+
+If you want to rename a branch while pointed to any branch, do:
+
+        git branch -m <oldname> <newname>
+
+If you want to rename the current branch, you can do:
+
+        git branch -m <newname>
+
 * read hint careful
 
         $ git branch --set-upstream-to origin/branch_name
@@ -78,3 +88,5 @@
 [git-remote](https://git-scm.com/docs/git-remote)
 
 [git-branch](https://git-scm.com/docs/git-branch)
+
+[git-branch-rename](https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch)
