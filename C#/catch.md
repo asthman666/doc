@@ -67,4 +67,3 @@
 
 [exception-filters](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#exception-filters)
 
-[how-to-create-user-defined-exceptions](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions)
