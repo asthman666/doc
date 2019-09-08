@@ -65,7 +65,7 @@
         var (_,  M) = named;
         Console.WriteLine(M);
  
-4. Pattern matching
+<span id="4">4. Pattern matching</span>
 
     模式匹配支持 `is` expressions和 `switch` expressions. 它们会激活分析一个对象及对象的属性来决定这个对象是否满足查找的对象。你可以使用`when`关键字来给这个匹配指定更多的规则。
 
