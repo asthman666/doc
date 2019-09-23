@@ -1,4 +1,4 @@
-A `delegate` is a type that defines a method signature. 
+A `delegate` is a type that defines a **method signature**. 
 
     public delegate int PerformCalculation(int x, int y);
 
