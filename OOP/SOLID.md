@@ -1,0 +1,1 @@
+https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/
