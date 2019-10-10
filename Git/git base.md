@@ -6,6 +6,10 @@
 
 [git-reset](https://git-scm.com/docs/git-reset)
 
+[whats-the-difference-between-git-reset-mixed-soft-and-hard](https://stackoverflow.com/questions/3528245/whats-the-difference-between-git-reset-mixed-soft-and-hard)
+
+[difference-between-git-reset-soft-mixed-and-hard](https://davidzych.com/difference-between-git-reset-soft-mixed-and-hard/)
+
 [Git-分支-分支简介](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%AE%80%E4%BB%8B)
 
 [Git-基础-打标签](https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE)
