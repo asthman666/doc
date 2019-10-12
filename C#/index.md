@@ -1,5 +1,7 @@
 [code](code/index)
 
+[dotnetcore](dotnetcore)
+
 [CLR via C#](CLR via C%23/index)
 
 [.NET blog](NET blog/index)
