@@ -1,1 +1,3 @@
 [SOLID](SOLID)
+
+[SRP](SRP)
