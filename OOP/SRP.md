@@ -4,13 +4,16 @@
 
     一个改变的原因是怎么定义的？
 
-    一些人想要弄明白修复bug是不是一个改变的原因。另外一些人想弄明白重构是不是改变的原因。这个问题可以由"reason to change"和"responsibility"之间的耦合来回答。
+    * 修复bug是不是一个改变的原因。
+    * 重构是不是改变的原因。
+    
+    这个问题可以由"reason to change"和"responsibility"之间的耦合来回答。
 
     当然，代码的职责并不是修复bug和重构。那么代码的指责是什么呢？进一步说，**谁必须为代码的设计做出相应？**
 
     想象一个简单的商业结构。一个CEO在最顶端，CFO，COO和CTO需要想CEO汇报。CFO负责财务，COO负责运营，CTO负责技术。
 
-    加入我们又一个类：
+    假如我们有一个类：
 
         public class Employee {
             public Money calculatePay();
@@ -20,7 +23,7 @@
 
     * calculatePay实现了一个employee应该发多少工资
     * save把employee的数据存储到数据库中
-    * reportHours返回一个字符串，这个字符串会添加到报告中，审计员会检查这个字符串，确保员工的工作时长
+    * reportHours返回一个字符串，这个字符串会添加到报告中，审计员会检查这个字符串，确保员工的工作时长和薪水一致
 
     现在，如果员工的工资发错了，CFO会有责任；如果审计报告有问题，COO会有责任；如果数据不能存储到数据库，CTO会有责任
 
@@ -36,4 +39,8 @@
 
 2. Gather together the things that change for the same reasons. Separate those things that change for different reasons.
 
-如果你思考上面这句话，你将会认识到，这仅仅是另外一种定义聚合和耦合的方法。对于有相同原因的修改请求，增加聚合；对于有不同原因修改请求，减少耦合。
+    如果你思考上面这句话，你将会认识到，这仅仅是另外一种定义聚合和耦合的方法。对于有相同原因的修改请求，增加聚合；对于有不同原因修改请求，减少耦合。
+
+> [Single_responsibility_principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)
+
+> [SingleReponsibilityPrinciple](https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html)
