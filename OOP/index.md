@@ -5,3 +5,7 @@
 [Open-closed principle](Open-closed principle)
 
 [LSP](LSP)
+
+[ISP](ISP)
+
+[DIP](DIP)
