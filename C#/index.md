@@ -12,6 +12,8 @@
 
 [aspdotnet](aspdotnet/index)
 
+[Visual Studio](Visual Studio/index)
+
 [collection](collection)
 
 [dictionary](dictionary)
