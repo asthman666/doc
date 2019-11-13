@@ -18,4 +18,6 @@
 
 [Windows](Windows/index)
 
+[PowerShell](PowerShell/index)
+
 [Life](Life/index)
