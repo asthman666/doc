@@ -100,3 +100,15 @@ BIT
         PRINT 'OK'
     ELSE
         PRINT 'NOT OK'
+		
+Execute User-defined Functions
+
+	-- Declare a variable to return the results of the function. 
+	DECLARE @ret nvarchar(15);   
+
+	-- Execute the function while passing a value to the @status parameter
+	EXEC @ret = dbo.ufnGetSalesOrderStatusText 
+		@Status = 5; 
+
+	-- View the returned value.  The Execute and Select statements must be executed at the same time.  
+	PRINT @ref

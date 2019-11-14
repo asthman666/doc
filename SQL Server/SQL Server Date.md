@@ -1,5 +1,12 @@
 # SQL Server Date
 
+### Query time zone
+
+	DECLARE @TimeZone VARCHAR(50)
+	EXEC MASTER.dbo.xp_regread 
+	'HKEY_LOCAL_MACHINE','SYSTEM\CurrentControlSet\Control\TimeZoneInformation','TimeZoneKeyName',@TimeZone OUT
+	SELECT @TimeZone
+
 ### Subtract one day from datetime
 
     DATEADD(day, -1, GETDATE())
