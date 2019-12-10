@@ -1,0 +1,3 @@
+[Why](Why)
+
+[Adapter Pattern]
