@@ -1,4 +1,4 @@
-**The general idea of B-Tree is that**
+### The general idea of B-Tree is that
 
 * all the values are stored in order
 * each leaf page is the same distance from the root.
