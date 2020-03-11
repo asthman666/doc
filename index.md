@@ -6,6 +6,8 @@
 
 [SQL Server](SQL%20Server/index)
 
+[MySQL](MySQL/index)
+
 [Javascript](Javascript/index)
 
 [CSS](CSS/index)
