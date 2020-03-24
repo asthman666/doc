@@ -90,7 +90,9 @@ SUBSTRING
     DECLARE @Letters CHAR(5) = 'AEIOU'
     DECLARE @Letter CHAR(1)
     SET @Letter = SUBSTRING(@Letters, ABS(CHECKSUM(NEWID()) % 5) + 1, 1)
-    PRINT @Letter 
+    PRINT @Letter -- return random letter in 'AEIOU', e.g. A, E...
+
+    SELECT SUBSTRING(@Letters, 2, LEN(@Letters)) -- Output: EIOU
 
 BIT
 
@@ -103,12 +105,21 @@ BIT
 		
 Execute User-defined Functions
 
-	-- Declare a variable to return the results of the function. 
-	DECLARE @ret nvarchar(15);   
+* example 1
 
-	-- Execute the function while passing a value to the @status parameter
-	EXEC @ret = dbo.ufnGetSalesOrderStatusText 
-		@Status = 5; 
 
-	-- View the returned value.  The Execute and Select statements must be executed at the same time.  
-	PRINT @ref
+        -- Declare a variable to return the results of the function. 
+        DECLARE @ret nvarchar(15);   
+
+        -- Execute the function while passing a value to the @status parameter
+        EXEC @ret = dbo.ufnGetSalesOrderStatusText 
+            @Status = 5; 
+
+        -- View the returned value.  The Execute and Select statements must be executed at the same time.  
+        PRINT @ref
+
+
+* example 2
+
+        SET @ret = (SELECT dbo.ufnGetSalesOrderStatusText(@Status))
+
