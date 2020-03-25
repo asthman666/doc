@@ -11,5 +11,12 @@
 
     Get-Process | Select-String -Pattern sky
 
+    netstat -ano | findstr :3000
+
+    taskkill /f /pid  43208
+
+<img src="find_port_pid.png">    
+
+<img src="killpid.png">
 
 [authenticodesignature](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-authenticodesignature)
