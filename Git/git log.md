@@ -1,18 +1,28 @@
-# [git log](https://www.git-scm.com/docs/git-log)
+### 1. How to show file commit log?
 
-`git log -p filename # -p, --patch`
+    git log -p filename # -p, --patch
 
-`git log -1 HEAD # default HEAD`
+### 2. How to show last commit details? 
 
-`git log -1 origin/develop`
+    git log --stat -p -1
+
+    git log --stat -p -1 HEAD # default HEAD
+
+### 3. How to show last commit in origin branch?
+
+    git log -1 origin/develop
+
+### 4. How to show specific commit, filelist and diff detail?    
+
+    git log --stat -p <sha1>
+
+### 5. How to show branch contains specific commit?
+
+    git branch -a -v --no-abbrev --contains <sha1>
 
 `git log origin/develop..HEAD # HEAD - origin/develop, specifies all the commits reachable from the current commit (i.e. HEAD), but not from origin/develop.`
 
 `git log --simplify-merges --full-history filename`
-
-`git log -p <sha1>`
-
-`git branch -a -v --no-abbrev --contains 368a27180016908edd44fae8b2cef01184207331`
 
 `git show --pretty="" --name-only 368a27180016908edd44fae8b2cef01184207331`
 
@@ -26,3 +36,4 @@
 
 > [resolving a git conflict with binary files](https://stackoverflow.com/questions/278081/resolving-a-git-conflict-with-binary-files)
 
+> [git log](https://www.git-scm.com/docs/git-log)
