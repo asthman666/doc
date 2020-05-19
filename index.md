@@ -25,3 +25,5 @@
 [INTERVIEW](INTERVIEW/index)
 
 [Life](Life/index)
+
+[Idea](Idea/index)
