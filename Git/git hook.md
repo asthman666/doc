@@ -10,6 +10,8 @@
 
 > [core.hooksPath](https://github.com/git/git/blob/master/Documentation/RelNotes/2.9.0.txt#L127-L128)
 
+> [customizing git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+
 ### how to prevent console.log debug string commit
 
 the code in **.git/hooks/pre-commit**
