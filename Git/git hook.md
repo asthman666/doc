@@ -20,7 +20,7 @@ the code in **.git/hooks/pre-commit**
 	use strict;
 	
 	my $content = `git diff --cached`;
-	if ( $content =~ m/\+console\.log/ ) {
+	if ( $content =~ m/\+\s*console\.log/ ) {
 	    print "commit diff has 'console.log' debug string, do you want to continue commit? (y/n)\n";
 	    open STDIN, '<', '/dev/tty';
 	    my $answer = <STDIN>;

@@ -1,0 +1,1 @@
+[Why need to set return type to a model](Why need to set return type to a model)
