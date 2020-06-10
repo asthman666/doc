@@ -6,6 +6,8 @@
 
     Add-Content -Path 'C:\log.txt' -Value 'test string'
 
+    Write-Host 'Hello, World!'
+
     try { NonsenseString }
     catch { Write-Host "error: " + $_ }
 
