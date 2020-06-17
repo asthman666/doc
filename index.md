@@ -26,7 +26,6 @@
 
 [Life](Life/index)
 
-
 [Idea](Idea/index)
 
 [ErrorLog](ErrorLog/index)
