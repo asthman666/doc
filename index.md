@@ -26,6 +26,7 @@
 
 [Life](Life/index)
 
+
 [Idea](Idea/index)
 
 
