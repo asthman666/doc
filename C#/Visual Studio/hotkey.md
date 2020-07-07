@@ -43,3 +43,9 @@
 8. build solution
 
     Ctrl+Shift+B
+
+9. compare two files
+
+    VS->View->Other Windows->Command Window (Ctrl+Alt+A)
+
+    Tools.DiffFiles File1 File2
