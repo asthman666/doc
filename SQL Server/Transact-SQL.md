@@ -1,6 +1,8 @@
 # Transact-SQL
 
-DECLARE
+T-SQL is central to using Microsoft SQL products and services. All tools and applications that communicate with a SQL database do so by sending T-SQL commands.
+
+## DECLARE
 
     DECLARE @gender varchar(30);   
     
@@ -10,7 +12,7 @@ DECLARE
 
     DECLARE @age INT;
     
-SET
+## SET
 
 	SET @gender = 'Fema';
 	
@@ -20,7 +22,7 @@ SET
 
     SET @age = 18;
 	
-SELECT
+## SELECT
 
     SELECT @gender = 'Man';
     
@@ -31,11 +33,11 @@ SELECT
     SELECT @gender = (SELECT Gender FROM Customer WHERE CustomerID = 1000);
 
 
-GETDATE
+## GETDATE
 
     SELECT GETDATE() as "Now"
 
-IF 
+## IF 
 
     IF @gender IS NOT NULL
     BEGIN
@@ -59,7 +61,7 @@ To define a **statement block**, use the control-of-flow keywords `BEGIN` and `E
         END ]
 
 
-WHILE
+## WHILE
 
     DECLARE @cnt INT = 0;
 
@@ -69,7 +71,7 @@ WHILE
         SET @cnt = @cnt + 1;
     END;
 
-CONVERT
+## CONVERT
 
     CONVERT(VARCHAR, 1)
 
@@ -79,13 +81,13 @@ CONVERT
 
     CONVERT(VARCHAR, GETDATE(), 126)
 
-RTRIM 
+## RTRIM 
 
 Returns a character string after truncating all trailing spaces.
 
     RTRIM('Hello World   ') -- return 'Hello World'
 
-SUBSTRING
+## SUBSTRING
 
     DECLARE @Letters CHAR(5) = 'AEIOU'
     DECLARE @Letter CHAR(1)
@@ -94,7 +96,7 @@ SUBSTRING
 
     SELECT SUBSTRING(@Letters, 2, LEN(@Letters)) -- Output: EIOU
 
-BIT
+## BIT
 
     DECLARE @YOUNG BIT
     SET @YOUNG = 1
@@ -103,7 +105,7 @@ BIT
     ELSE
         PRINT 'NOT OK'
 		
-Execute User-defined Functions
+## Execute User-defined Functions
 
 * example 1
 
@@ -123,3 +125,6 @@ Execute User-defined Functions
 
         SET @ret = (SELECT dbo.ufnGetSalesOrderStatusText(@Status))
 
+## COALESCE 
+
+Evaluates the arguments in order and returns the current value of the first expression that initially doesn't evaluate to NULL. For example, `SELECT COALESCE(NULL, NULL, 'third_value', 'fourth_value');` returns the third value because the third value is the first value that isn't null.
