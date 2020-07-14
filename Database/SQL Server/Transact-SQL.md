@@ -104,26 +104,6 @@ Returns a character string after truncating all trailing spaces.
         PRINT 'OK'
     ELSE
         PRINT 'NOT OK'
-		
-## Execute User-defined Functions
-
-* example 1
-
-
-        -- Declare a variable to return the results of the function. 
-        DECLARE @ret nvarchar(15);   
-
-        -- Execute the function while passing a value to the @status parameter
-        EXEC @ret = dbo.ufnGetSalesOrderStatusText 
-            @Status = 5; 
-
-        -- View the returned value.  The Execute and Select statements must be executed at the same time.  
-        PRINT @ref
-
-
-* example 2
-
-        SET @ret = (SELECT dbo.ufnGetSalesOrderStatusText(@Status))
 
 ## COALESCE 
 

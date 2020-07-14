@@ -1,6 +1,6 @@
 [SQL Server Base](SQL Server Base)
 
-[Store Procedure](Store Procedure)
+[Store Procedure And Function](Store Procedure And Function)
 
 [Temp Table](SQL Server Temp Table)
 

@@ -4,9 +4,7 @@
 
 [C#](C%23/index)
 
-[SQL Server](SQL%20Server/index)
-
-[MySQL](MySQL/index)
+[Database](Database/index)
 
 [Javascript](Javascript/index)
 
