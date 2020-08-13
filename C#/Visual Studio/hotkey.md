@@ -49,3 +49,7 @@
     VS->View->Other Windows->Command Window (Ctrl+Alt+A)
 
     Tools.DiffFiles File1 File2
+
+10. [Go to Matching Brace](https://stackoverflow.com/questions/1501921/go-to-matching-brace-in-visual-studio)
+
+    CTRL + ]
