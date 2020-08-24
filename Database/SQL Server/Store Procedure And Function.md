@@ -20,8 +20,12 @@
     declare @rc int
     declare @input varchar(50) = 'World'
     exec @rc = [dbo].[testone] @input, @r out
-    print 'return value ' + @r
-    print 'return code ' + convert(varchar, @rc)
+    print 'return value ' + @r -- 'return value Hello, World'
+    print 'return code ' + convert(varchar, @rc) -- 'return code 0'
+
+    set @input = null
+    exec @rc = [dbo].[testone] @input, @r out -- ERROR: You must specify input
+    print 'return code ' + convert(varchar, @rc) -- return code 1
 
 # Function
 
