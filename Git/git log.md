@@ -2,6 +2,17 @@
 
     git log -p filename # -p, --patch
 
+    git log -m --sparse --full-history -p filename
+
+    --sparse
+        All commits in the simplified history are shown.
+
+    --full-history
+        Same as the default mode, but does not prune some history.  
+
+    -m
+        This flag makes the merge commits show the full diff like regular commits; for each merge parent, a separate log entry and diff is generated. An exception is that only diff against the first parent is shown when --first-parent option is given; in that case, the output represents the changes the merge brought into the then-current branch.              
+
 ### 2. How to show last commit details? 
 
     git log --stat -p -1
