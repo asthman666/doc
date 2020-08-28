@@ -25,7 +25,11 @@
 
 ### 4. How to show specific commit, filelist and diff detail?
 
-    git log --stat -p <sha1>
+    git show <sha1>
+
+    git show -m <sha1>
+
+    git show -m --name-only <sha1>
 
 ### 5. How to show branch contains specific commit?
 
@@ -70,8 +74,6 @@
 `git log origin/develop..HEAD # HEAD - origin/develop, specifies all the commits reachable from the current commit (i.e. HEAD), but not from origin/develop.`
 
 `git log --simplify-merges --full-history filename`
-
-`git show --pretty="" --name-only 368a27180016908edd44fae8b2cef01184207331`
 
 `git checkout --ours -- path/to/conflicted-file.txt`
 
