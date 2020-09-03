@@ -6,11 +6,7 @@
 
 [Database](Database/index)
 
-[Javascript](Javascript/index)
-
-[CSS](CSS/index)
-
-[HTML](HTML/index)
+[FrontEnd](FrontEnd/index)
 
 [Git](Git/index)
 

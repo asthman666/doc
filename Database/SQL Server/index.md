@@ -17,3 +17,5 @@
 [SQL Server Compare](SQL Server Compare)
 
 [GROUP](GROUP)
+
+[JOIN](JOIN)
