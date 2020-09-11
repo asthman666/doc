@@ -4,6 +4,8 @@
 
 [Temp Table](SQL Server Temp Table)
 
+[Table Variable](SQL Server Table Variable)
+
 [Transact-SQL](Transact-SQL)
 
 [Date](SQL Server Date)
