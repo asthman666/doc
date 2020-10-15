@@ -23,14 +23,17 @@ Invoking the batch file like this: mybatch john billy would output:
 
 ### %~1 means "remove the enclosing quotes (if they exist) from the first parameter.
 
-Put the following command in a batch file called mybatch.bat:
+Put the following command in a batch file called **mybatch.bat**:
 
     @echo off
     @echo hello %~1
     @echo hello %1    
 
-Invoking the batch file like this: mybatch "Hello World" would output:
+Invoking the batch file like below:
 
+    mybatch "Hello World"
+
+    # output
     Hello World
     "Hello World"
 

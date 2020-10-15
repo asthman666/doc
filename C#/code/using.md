@@ -22,6 +22,19 @@ Code:
         }
     }
 
+Same as:
+
+    var file = new FileStream(@"C:\test\aaa.txt", FileMode.Open)
+    try {
+        var zero = returnZero();
+        var x = 5 / zero;
+
+        Console.WriteLine("using inside");
+    }   
+    finally {
+        file?.Dispose();
+    } 
+
 IL Code:
 
     .method private hidebysig static void  Main(string[] args) cil managed
