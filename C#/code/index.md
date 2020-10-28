@@ -2,6 +2,8 @@
 
 [Source Code Parse](Source Code Parse/index)
 
+[tip](tip)
+
 [out](out)
 
 [extern](extern)
