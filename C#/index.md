@@ -32,8 +32,6 @@
 
 [@](@)
 
-[csharp-7](csharp-7)
-
 [try](try)
 
 [catch](catch)

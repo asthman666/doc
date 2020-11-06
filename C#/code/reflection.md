@@ -1,8 +1,10 @@
 # Reflection
 
     using System;
+    using System.IO;
+    using System.Reflection;
 
-    namespace Study
+    namespace ConsoleApp5
     {
         public class Person
         {
@@ -28,35 +30,40 @@
         {
             static void Main(string[] args)
             {
-                Console.WriteLine(Assembly.GetExecutingAssembly());
+                Console.WriteLine(string.Format("ExecutingAssembly {0}", Assembly.GetExecutingAssembly())); // ExecutingAssembly ConsoleApp5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
                 // get current assembly types
                 Assembly currentAssembly = Assembly.GetExecutingAssembly();
                 foreach (Type type in currentAssembly.GetTypes())
                 {
-                    Console.WriteLine(type.FullName);
+                    Console.WriteLine(string.Format("Assembly Type FullName: {0}", type.FullName));
+                    // Assembly Type FullName: ConsoleApp5.Person
+                    // Assembly Type FullName: ConsoleApp5.Program
                 }
 
-                Console.WriteLine(typeof(String).Assembly.FullName);
-                Console.WriteLine(typeof(String).Namespace);
+                Console.WriteLine($"Assembly FullName: {typeof(String).Assembly.FullName}"); // Assembly FullName: System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+                Console.WriteLine($"Type of String Namespace: {typeof(String).Namespace}"); // Type of String Namespace: System
 
                 string name = "noah";
-                Console.WriteLine(name.GetType().Assembly.Location);
+                Console.WriteLine($"Type of String Location: {name.GetType().Assembly.Location}"); // Type of String Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.8\System.Private.CoreLib.dll
 
                 var p = new Person("noah", 15);
-                foreach (  var pp in p.GetType().GetProperties() )
+                foreach (var pp in p.GetType().GetProperties())
                 {
-                    Console.WriteLine(String.Format("property: {0}, value: {1}", pp.Name, pp.GetValue(p)));                
+                    Console.WriteLine(String.Format("Person class Property: {0}, Value: {1}", pp.Name, pp.GetValue(p)));
+                    // Person class Property: Name, Value: noah
+                    // Person class Property: Age, Value: 15
                 }
-                
-                foreach ( var ff in p.GetType().GetFields() ) {
-                
+
+                foreach (var ff in p.GetType().GetFields())
+                {
+
                 }
 
                 var p2 = (Person)Activator.CreateInstance(p.GetType()); // Person class must has the no params construct
                 p2.Name = "beata";
                 p2.Age = 16;
-                p.GetType().InvokeMember("SayHello", System.Reflection.BindingFlags.InvokeMethod, null, p2, null);
+                p.GetType().InvokeMember("SayHello", System.Reflection.BindingFlags.InvokeMethod, null, p2, null); // Hello, I'm beata
 
                 Console.ReadKey();
             }

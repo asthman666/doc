@@ -7,12 +7,12 @@ Code:
             using (var file = new FileStream(@"C:\test\aaa.txt", FileMode.Open))
             {
                 var zero = returnZero();
-                var x = 5 / zero;
+                var x = 5 / zero; // will throw exception here
 
-                Console.WriteLine("using inside");            
+                Console.WriteLine("using inside");  // will no output      
             }
 
-            Console.WriteLine("using outside");
+            Console.WriteLine("using outside"); // will no output
         }
 
 
@@ -24,10 +24,10 @@ Code:
 
 Same as:
 
-    var file = new FileStream(@"C:\test\aaa.txt", FileMode.Open)
+    var file = new FileStream(@"C:\test\aaa.txt", FileMode.Open);
     try {
         var zero = returnZero();
-        var x = 5 / zero;
+        var x = 5 / zero; // no catch, so will throw exception here
 
         Console.WriteLine("using inside");
     }   
