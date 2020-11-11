@@ -8,6 +8,10 @@
 
     $("[id^=edit]")
 
+## id property contains "edit"    
+    
+    $("[id*='edit']")
+
 ## multiple selector
 
 [multiple-attribute-selector](https://api.jquery.com/multiple-attribute-selector/)
