@@ -22,6 +22,8 @@
 
 [INTERVIEW](INTERVIEW/index)
 
+[Study](Study/index)
+
 [Life](Life/index)
 
 [Idea](Idea/index)
