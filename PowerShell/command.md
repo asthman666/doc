@@ -1,24 +1,47 @@
-    Get-Process -Name "winword" | Select-String -Pattern Id
+1. Get Process
 
-    Stop-Process -Name "winword"
+        Get-Process -Name "winword" | Select-String -Pattern Id
+        Get-Process -Name "iisexpress"
+        Get-Process
 
-    Stop-Process -Name "iexplore"
+2. Stop Process use Name
+   
+        Stop-Process -Name "winword"
+        Stop-Process -Name "iexplore"
+        Stop-Process -Name "iisexpress"
 
-    Add-Content -Path 'C:\log.txt' -Value 'test string'
+3. Stop Process use Id
+   
+        taskkill /f /pid  43208
 
-    Write-Host 'Hello, World!'
+    <img src="killpid.png">
 
-    try { NonsenseString }
-    catch { Write-Host "error: " + $_ }
+4. Add Content for File
 
-    Get-Process | Select-String -Pattern sky
+        Add-Content -Path 'C:\log.txt' -Value 'test string'
 
-    netstat -ano | findstr :3000
+5. Print
 
-    taskkill /f /pid  43208
+        Write-Host 'Hello, World!'
 
-<img src="find_port_pid.png">    
+6. Try-Catch
 
-<img src="killpid.png">
+        try { NonsenseString }
+        catch { Write-Host "error: " + $_ }
+
+7. How to find port pid
+
+        netstat -ano | findstr :3000
+
+    <img src="find_port_pid.png"> 
+
+8. How to get powershell version?
+
+        $PSVersionTable
+
+9. How to get Environment Path in powershell.    
+
+        $env:path
+
 
 [authenticodesignature](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-authenticodesignature)
