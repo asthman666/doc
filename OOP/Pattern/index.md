@@ -5,3 +5,5 @@
 [Bridge Pattern](Bridge Pattern)
 
 [Observer](Observer)
+
+[Singleton](Singleton)

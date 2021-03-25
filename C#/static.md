@@ -4,19 +4,21 @@
 
 * A static class is basically the same as a non-static class, but there is one difference: a static class cannot be instantiated.
 
-* A static class can be used as a convenient container for sets of methods that just operate on input parameters and do not have to get or set any internal instance fields. For example, `System.Match` class is a static class.
+* A static class can be used as a convenient container for sets of methods that just operate on input parameters and do not have to get or set any internal **instance** fields. For example, `System.Match` class is a static class.
 
 * A static constructor is only called one time, and a static class remains in memory for the lifetime of the application domain in which your program resides.
 
-* The advantage of using a static class is that the compiler can check to make sure that no instance members are accidentally added.
+* Creating a static class is therefore basically the same as creating a class that contains only static members and a private constructor.
+
+  The advantage of using a static class is that the compiler can check to make sure that no instance members are accidentally added.
 
 * Static classes are sealed and therefore cannot be inherited.
 
 * Non-static classes should also define a static constructor if the class contains static members that require non-trivial initialization.
 
-* Contains only static members.
+  Contains only static members.
 
-* Cannot contain Instance Constructors. However, they can contain a static constructor.
+  Cannot contain Instance Constructors. However, they can contain a static constructor.
 
 ### Static Members
 
