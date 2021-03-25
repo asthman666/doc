@@ -7,3 +7,5 @@
 [Observer](Observer)
 
 [Singleton](Singleton)
+
+[Factory](Factory)
