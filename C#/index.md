@@ -32,6 +32,8 @@
 
 [@](@)
 
+[lock](lock)
+
 [try](try)
 
 [catch](catch)
