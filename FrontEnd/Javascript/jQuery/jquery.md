@@ -19,10 +19,12 @@
     // window resize event
     $(window).resize(function () {})
 
+    // pass nothing to function
     (function () {
         ...
     })()
 
+    // pass window.jQuery and window to function
     (function ($, window) {
         ...
     })(window.jQuery, window)
