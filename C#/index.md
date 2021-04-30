@@ -20,6 +20,8 @@
 
 [Visual Studio](Visual Studio/index)
 
+[Refactor](Refactor/index)
+
 [collection](collection)
 
 [dictionary](dictionary)
