@@ -22,4 +22,4 @@
 
 [JOIN](JOIN)
 
-[MyBug](MyBug)
+[MyNote](MyNote)
