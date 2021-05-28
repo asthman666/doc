@@ -15,7 +15,8 @@
 
     SELECT OBJECT_ID('tempdb..#MyTable_tmp')
 
-    IF OBJECT_ID('tempdb..#MyTable_tmp') IS NOT NULL DROP TABLE #MyTable_tmp
+    IF OBJECT_ID('tempdb..#MyTable_tmp') IS NOT NULL 
+        DROP TABLE #MyTable_tmp
 
 ### How to drop temp table
 
@@ -37,8 +38,8 @@ example 1:
 
         Delete #tmptable Where NUM = @NUM
     END
-    DROP TABLE #tmptable    
-
+    IF OBJECT_ID('tempdb..#tmptable') IS NOT NULL 
+        DROP TABLE #tmptable  
 
 example 2:
 
@@ -56,7 +57,8 @@ example 2:
                     
         SET @I = @I + 1
     END
-    DROP TABLE #tmptable
+    IF OBJECT_ID('tempdb..#tmptable') IS NOT NULL 
+        DROP TABLE #tmptable
 
 > [What is the equivalent of 'CREATE TABLE … LIKE …" in SQL Server](https://stackoverflow.com/questions/616104/what-is-the-equivalent-of-create-table-like-in-sql-server)
 
