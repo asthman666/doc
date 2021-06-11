@@ -72,6 +72,20 @@ For example, with SQL, it would be instructions such as insert, update, delete, 
         * from [Dates]
     option (maxrecursion 0)
 
+### How to select 1-9
+
+    SELECT number.n FROM (VALUES(1),(2),(3),(4),(5),(6),(7),(8),(9)) number(n)
+
+    WITH [Nums] as (
+        SELECT 1 AS NUM
+        UNION ALL
+        SELECT NUM + 1
+        FROM [Nums]
+        WHERE [Num] < 9
+    ) SELECT * from [Nums]
+    option (maxrecursion 0)
+
+
 > 参考:
 
 - [How to find current transaction level?](https://stackoverflow.com/questions/1038113/how-to-find-current-transaction-level)     
