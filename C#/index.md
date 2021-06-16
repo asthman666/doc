@@ -2,6 +2,8 @@
 
 [code](code/index)
 
+[Test](Test/index)
+
 [dotnetcore](dotnetcore/index)
 
 [CLR via C#](CLR via C%23/index)
