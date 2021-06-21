@@ -38,6 +38,15 @@
 
 <img src="querySelectorAll.PNG">  
 
+## parents return first node
+    var html = `
+    <div data-name="node1">
+        <div data-name="node2">
+            <ul>
+            <li id="test">1</li>
+            </ul>
+        </div>
+    </div>`;
 
-
-    
+    $(html).find("#test").parents("div").length // 2
+    $(html).find("#test").parents("div").data("name") // node2, node2 is the nearest node than node1 node
