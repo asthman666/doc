@@ -53,4 +53,29 @@
         noah	Chinese	80
         beata	Math	100
         beata	NULL	70
-                
+
+3. Exactly
+
+        declare @students table  (id int, name varchar(255))
+        insert into @students values (1, 'noah')
+
+        declare @studentid int = 0
+        set @studentid = (select id from @students where name = 'dan')
+
+        if @studentid is null
+            print 'NULL' -- correctly output
+        else
+            print 'NOT NULL'
+
+        --------------------------------------------------------------------------------
+
+        CREATE TABLE [dbo].[Teacher]
+        (
+            [Id]   INT  IDENTITY (1, 1) NOT NULL,
+            [Name] NVARCHAR (100) NOT NULL
+            CONSTRAINT [PK_ImportFileType] PRIMARY KEY CLUSTERED ([Id] ASC) WITH (FILLFACTOR = 90)
+        )
+
+[identity](https://docs.microsoft.com/en-us/sql/t-sql/statements/create-table-transact-sql-identity-property?view=sql-server-ver15)        
+
+[fillfactor](https://docs.microsoft.com/en-us/sql/relational-databases/indexes/specify-fill-factor-for-an-index?view=sql-server-ver15)
