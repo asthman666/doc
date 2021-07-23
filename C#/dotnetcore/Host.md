@@ -114,4 +114,12 @@ Unblocks extensions such as RunAsync and WaitForShutdownAsync.
 
 在 `IHostLifetime` 使用了 `IHostApplicationLifetime`
 
+### `IHostEnvironment`
+
+Inject the IHostEnvironment service into a class to get information about the following settings:
+
+* `ApplicationName`
+* `EnvironmentName`
+* `ContentRootPath`
+
 > [Genric Host](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-5.0)
