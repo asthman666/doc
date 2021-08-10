@@ -2,7 +2,7 @@
 
 [code](code/index)
 
-[Test](Test/index)
+[test](test/index)
 
 [dotnetcore](dotnetcore/index)
 
