@@ -22,7 +22,7 @@
 
 [Visual Studio](Visual Studio/index)
 
-[VScode](VScode/index)
+[VSCode](VSCode/index)
 
 [Refactor](Refactor/index)
 
