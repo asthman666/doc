@@ -4,6 +4,8 @@
         Get-Process -Name "iisexpress"
         Get-Process
 
+        Get-Process -Id 12323
+
 2. Stop Process use Name
    
         Stop-Process -Name "winword"
