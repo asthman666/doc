@@ -30,4 +30,4 @@
 
 [ErrorLog](ErrorLog/index)
 
-[Principle](Priciple/index)
+[Principle](Principle/index)
