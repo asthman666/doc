@@ -29,3 +29,5 @@
 [Idea](Idea/index)
 
 [ErrorLog](ErrorLog/index)
+
+[Principle](Priciple/index)
