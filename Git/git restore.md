@@ -4,3 +4,7 @@
 
         git restore -s [specific commit version] [files]
 
+
+2. How to restore all files in the current directory?
+
+        git restore .
