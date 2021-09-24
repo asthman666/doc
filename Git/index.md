@@ -15,3 +15,5 @@
 [git hook](git hook)
 
 [git rebase](git rebase)
+
+[git restore](git restore)
