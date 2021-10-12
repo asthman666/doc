@@ -4,6 +4,8 @@
 
 [C#](C%23/index)
 
+[IDE](IDE/index)
+
 [Refactor](Refactor/index)
 
 [Database](Database/index)

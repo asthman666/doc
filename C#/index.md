@@ -20,10 +20,6 @@
 
 [eShopOnWeb](eShopOnWeb/index)
 
-[Visual Studio](Visual Studio/index)
-
-[VSCode](VSCode/index)
-
 [Refactor](Refactor/index)
 
 [collection](collection)
