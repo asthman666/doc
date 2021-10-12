@@ -12,8 +12,11 @@
 
 [How to add a file to the last commit in git](How to add a file to the last commit in git)
 
+[How to remove a file to the last commit in git](How to remove a file to the last commit in git)
+
 [git hook](git hook)
 
 [git rebase](git rebase)
 
 [How to revert some files to specific commit version](How to revert some files to specific commit version)
+
