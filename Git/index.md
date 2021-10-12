@@ -16,4 +16,4 @@
 
 [git rebase](git rebase)
 
-[git restore](git restore)
+[How to revert some files to specific commit version](How to revert some files to specific commit version)
