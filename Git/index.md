@@ -10,7 +10,7 @@
 
 [git branch and remote](git branch and remote)
 
-[git commit](git commit)
+[How to add a file to the last commit in git](How to add a file to the last commit in git)
 
 [git hook](git hook)
 

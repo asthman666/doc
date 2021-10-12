@@ -1,5 +1,3 @@
-### 1. How to add a file to the last commit in git? 
-
     git add the_left_out_file
 
     git commit --amend --no-edit
