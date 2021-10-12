@@ -1,1 +1,3 @@
 [hotkey](hotkey)
+
+[bookmarks](bookmarks)
