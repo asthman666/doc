@@ -1,4 +1,4 @@
-### Using parameters in batch files: %0 and %9
+## Using parameters in batch files: %0 and %9
 
 %0 is the program name as it was called.
 
@@ -10,20 +10,20 @@ and so on till %9.
 
 Example:
 
-Put the following command in a batch file called mybatch.bat:
+Put the following command in a batch file called `mybatch.bat`:
 
     @echo off
     @echo hello %1 %2
     pause
 
-Invoking the batch file like this: mybatch john billy would output:
+Invoking the batch file like this: `mybatch john billy` would output:
 
     hello john billy
 
 
-### %~1 means "remove the enclosing quotes (if they exist) from the first parameter.
+## %~1 means "remove the enclosing quotes (if they exist) from the first parameter.
 
-Put the following command in a batch file called **mybatch.bat**:
+Put the following command in a batch file called `mybatch.bat`:
 
     @echo off
     @echo hello %~1
@@ -38,7 +38,7 @@ Invoking the batch file like below:
     "Hello World"
 
 
-### if check    
+## if check    
 
     if %1 == "Y" (
         @echo "Get Input Y"
