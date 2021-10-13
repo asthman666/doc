@@ -2,15 +2,15 @@
 
 [OOP](OOP/index)
 
+[Refactor](Refactor/index)
+
 [C#](C%23/index)
 
-[IDE](IDE/index)
-
-[Refactor](Refactor/index)
+[FrontEnd](FrontEnd/index)
 
 [Database](Database/index)
 
-[FrontEnd](FrontEnd/index)
+[IDE](IDE/index)
 
 [Git](Git/index)
 
@@ -21,8 +21,6 @@
 [HTTP](HTTP/index)
 
 [Security](Security/index)
-
-[INTERVIEW](INTERVIEW/index)
 
 [Study](Study/index)
 
