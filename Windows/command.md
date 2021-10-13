@@ -8,8 +8,9 @@
 
 ## Open Environment Variables in Windows 10?
    
-	Win+R
-	sysdm.cpl
+1. `Win+R` to open `Run window` 
+2. Enter `sysdm.cpl` to open `System Properties`
+3. Use the path `Advanced->Environment Variables`    
 
 ## How can you find out which process is listening on a port on Windows?
 
