@@ -53,3 +53,7 @@
 10. [Go to Matching Brace](https://stackoverflow.com/questions/1501921/go-to-matching-brace-in-visual-studio)
 
     CTRL + ]
+
+11. collapse all sections of code
+
+    CTRL+M+O
