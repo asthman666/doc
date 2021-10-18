@@ -13,3 +13,5 @@
 [React](React/index)
 
 [Tip](Tip)
+
+[bubbling vs capturing](bubbling vs capturing)
