@@ -29,3 +29,5 @@
 [using](using)
 
 [LINQ](LINQ)
+
+[MemberwiseClone](MemberwiseClone)
