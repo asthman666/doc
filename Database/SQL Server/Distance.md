@@ -13,7 +13,10 @@ Use `geography::Point` generate `geography`
         @lng decimal(18,15)
     SET @lat = 47.639322;
     SET @lng = -122.128383;
-        
+    DECLARE @location geography = geography::Point(@lat, @lng, 4326);
+
+Use `STDistance` to calculate distance
+
     Declare @source geography = geography::Point(30.20491677226107, -95.45612258030434, 4326);
     Declare @destination geography= geography::Point(30.120021042878015, -95.44187468725596, 4326);
         
