@@ -23,4 +23,13 @@
     #You don't have to type the alias name. Instead, you can just tab complete. This function uses dynamic parameters.
     PS C:\> rlb docs    
 
+### **NOTE**:
+
+If you have some permission issues, maybe need to run:
+
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+
+
 [PSBookmark](https://github.com/rchaganti/PSBookmark)
+
+[Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser](https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2)
