@@ -1,4 +1,38 @@
-Put this meta tag in your html head:
+# Using media queries
+
+## My Story
+
+I got a new computer has the resolution 1920x1080, it is installed windows system and change the size of text, apps, and other items 150% in Display Settings. See below:
+
+<img src="my_settings.png" width="250px">
+
+In my browser, when applying css `@media screen and (max-width: 1700)`, how to know the screen match the `media` query.
+
+We can use `window.matchMedia('screen and (max-width: 1700px)').matches` to check it. See below:
+
+<img src="match_media.png" width="350px">
+
+`window.innerWidth` include the scrollbar width
+`document.documentElement.clientWidth` doesn't include the scrollbar width
+
+From above image, we can get the result:
+`media` query `width` is compare with `window.innerWidth`.
+
+> [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia)
+
+> [how-to-get-the-browser-viewport-dimensions](https://stackoverflow.com/questions/1248081/how-to-get-the-browser-viewport-dimensions)
+
+## @media vs @media screen
+
+`screen` is one of the media types
+
+Default media type is `all`
+
+There are four media types, they are `all, print, screen, speech`.
+
+> [Using_media_queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+
+## Put this meta tag in your html head:
 
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 
