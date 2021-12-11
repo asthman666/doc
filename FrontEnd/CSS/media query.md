@@ -31,6 +31,7 @@ Default media type is `all`
 There are four media types, they are `all, print, screen, speech`.
 
 > [Using_media_queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+> [media-all-vs-media-screen](https://stackoverflow.com/questions/12549267/media-all-vs-media-screen)
 
 ## Put this meta tag in your html head:
 
