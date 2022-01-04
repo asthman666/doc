@@ -70,3 +70,12 @@ slice() 方法返回一个新的数组对象，这一对象是一个由 begin �
 
     console.log(array3);
     // expected output: Array ["a", "b", "c", "d", "e", "f"]
+
+## from
+
+    Array.from({length: 5}, (v, i) => i);
+    // [0, 1, 2, 3, 4]
+
+    Array.from({length: 3}, (v, i) => i + 1);
+    // [1, 2, 3]
+
