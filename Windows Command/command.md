@@ -15,3 +15,7 @@
 ## How can you find out which process is listening on a port on Windows?
 
 	C:\> netstat -a -b
+
+## Restart IIS
+
+	iisreset
