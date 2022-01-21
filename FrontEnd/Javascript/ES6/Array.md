@@ -79,3 +79,6 @@ slice() 方法返回一个新的数组对象，这一对象是一个由 begin �
     Array.from({length: 3}, (v, i) => i + 1);
     // [1, 2, 3]
 
+## reduce
+
+    The final result of running the reducer across all elements of the array is a single value.
