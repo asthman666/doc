@@ -57,3 +57,10 @@
 11. collapse all sections of code
 
     CTRL+M+O
+
+
+12. format document
+
+    To format a selection: `Ctrl+K, Ctrl+F`
+
+    To format a document: `Ctrl+K, Ctrl+D`
