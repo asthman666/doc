@@ -16,6 +16,6 @@
 
 	C:\> netstat -a -b
 
-## Restart IIS
+## Restart IIS (run as administrator)
 
-	iisreset
+	iisreset 
