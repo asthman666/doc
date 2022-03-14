@@ -4,7 +4,7 @@
 
     console.log("my object: %o", myObj)
 
-### To check if an array is either empty or not
+### [Array.isArray()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray) to check if object is `array`
 
     if (Array.isArray(arr) && arr.length) {
         // array exists and is not empty
@@ -39,16 +39,15 @@
     console.log(array1.includes(2)); // true
 
 ## [every](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+    // 返回一个布尔值
 
-    // every 方法为数组中的每个元素执行一次 callback 函数，直到它找到一个会使 callback 返回 false 的元素。如果发现了一个这样的元素，every 方法将会立即返回 false
+    // every 方法为数组中的每个元素执行一次 callback 函数，直到它找到一个会使 callback 返回 false 的元素。如果发现了一个这样的元素，every 方法将会立即返回 false, 因此若收到一个空数组，此方法在一切情况下都会返回 true
+    [].every(x => x > 100) // true
 
-    // 若收到一个空数组，此方法在一切情况下都会返回 true
-    Array(0).every(x => x === 0) // true
+    // callback 只会为那些已经被赋值的索引调用, Array(3)生成一个长度为3的，每个元素没有被赋值的数组，因此数组里的每个元素都不会调用x => x === 100这个callback，无法找到调用callback返回false的元素，因此返回true
+    Array(3).every(x => x === 100) // true
 
-    // callback 只会为那些已经被赋值的索引调用
-    Array(3).every(x => x === 0) // true
-
-    [1,2].fill(0).every(x => x === 1) // false
+    Array(3).fill(0).every(x => x === 100) // false
 
 ## [slice](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
@@ -82,3 +81,11 @@ slice() 方法返回一个新的数组对象，这一对象是一个由 begin �
 ## [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
     The final result of running the reducer across all elements of the array is a single value.
+
+## [filter](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+    返回一个新数组
+
+    filter 为数组中的每个元素调用一次 callback 函数，并利用所有使得 callback 返回 true 或等价于 true 的值的元素创建一个新数组
+
+    callback 只会在已经赋值的索引上被调用，对于那些已经被删除或者从未被赋值的索引不会被调用
