@@ -1,3 +1,5 @@
+[Tips](Tips)
+
 [SQL Server Base](SQL Server Base)
 
 [Store Procedure And Function](Store Procedure And Function)
