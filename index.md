@@ -22,6 +22,8 @@
 
 [Security](Security/index)
 
+[GIMP](GIMP/index)
+
 [Study](Study/index)
 
 [Life](Life/index)
