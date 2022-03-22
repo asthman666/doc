@@ -9,3 +9,5 @@
 [The order of the HTML DOM](The order of the HTML DOM)
 
 [The order of the Javascript](The order of the Javascript)
+
+[input_button_submit_differences](input_button_submit_differences)
