@@ -33,6 +33,8 @@
     Array(3).length // 3
     Array("3").length // 1
 
+> [returning_object_literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#returning_object_literals)
+
 ## [includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 
     const array1 = [1, 2, 3];

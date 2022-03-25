@@ -79,6 +79,18 @@
         hint: will track its remote counterpart, you may want to use
         hint: "git push -u" to set the upstream config as you push.
 
+* Create merge request from command line, need more research
+
+        git branch -vv
+
+        git branch new_branch commit_id // create new_branch from commit_id
+
+        git checkout commit_id
+
+        git push -u origin new_branch merge_request.create -o merge_request.target=target_branch_name
+
+
+
 [delete git branch locally and remotely](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely)
 
 [find out branch is tracking](https://stackoverflow.com/questions/171550/find-out-which-remote-branch-a-local-branch-is-tracking/9753364)
