@@ -14,6 +14,10 @@ You can rename it in the Bookmark Window from the right-click or context menu.
 
 You can organize bookmarks into virtual folders by choosing New Folder in the bookmark window and then dragging selected bookmarks into the new folder.
 
+## How to show Bookmarks window using the hot key
+
+    Ctrl + K, Ctrl + W
+
 **NOTE:**
 
 **The bookmark is set to the line number, not to the code. If you modify the code, the bookmark is retained at the line number, and does not move with the code.**
