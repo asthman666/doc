@@ -11,3 +11,7 @@
 [The order of the Javascript](The order of the Javascript)
 
 [input_button_submit_differences](input_button_submit_differences)
+
+[Attribute vs Property](Attribute_Property)
+
+[line-height](line-height)
