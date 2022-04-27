@@ -1,5 +1,3 @@
-[Escapse Single Quote in HTML](Escapse Single Quote in HTML)
-
 [doctype](doctype)
 
 [Attribute vs Property](Attribute_Property)
@@ -10,6 +8,8 @@
 
 [submit form is prevented by returning false](submit_click_test)
 
-[input_button_submit_differences](input_button_submit_differences)
+[input_button_submit_differences](input_button_submit_button_differences)
 
 [line-height](line-height)
+
+[Escapse Single Quote in HTML](Escapse Single Quote in HTML)
