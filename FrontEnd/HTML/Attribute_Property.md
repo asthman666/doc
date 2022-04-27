@@ -22,6 +22,12 @@ The DOM is one of the most-used APIs on the Web because it allows code running i
 
 DOM was not originally specified, it came about when browsers began implementing JavaScript.
 
+# Window
+
+The Window interface represents a window containing a DOM document; the `document` property points to the DOM document loaded in that window.
+
+<img src="Window.png">
+
 # Document
 The Document interface represents any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree.
 

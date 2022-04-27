@@ -1,18 +1,18 @@
 `async`
 
-**For classic scripts, if the async attribute is present, then the classic script will be fetched in parallel to parsing and evaluated as soon as it is available.**
+For classic scripts, if the async attribute is present, then the classic script will be fetched in parallel to parsing and evaluated as soon as it is available.
 
-**This attribute allows the elimination of parser-blocking JavaScript where the browser would have to load and evaluate scripts before continuing to parse. defer has a similar effect in this case.**
+This attribute allows the elimination of parser-blocking JavaScript where the browser would have to load and evaluate scripts before continuing to parse. defer has a similar effect in this case.
 
 `defer`
 
-**This Boolean attribute is set to indicate to a browser that the script is meant to be executed after the document has been parsed, but before firing DOMContentLoaded.**
+This Boolean attribute is set to indicate to a browser that the script is meant to be executed after the document has been parsed, but before firing DOMContentLoaded.
 
-**Scripts with the defer attribute will prevent the DOMContentLoaded event from firing until the script has loaded and finished evaluating.**
+Scripts with the defer attribute will prevent the DOMContentLoaded event from firing until the script has loaded and finished evaluating.
 
-**Scripts with the defer attribute will execute in the order in which they appear in the document.**
+Scripts with the defer attribute will execute in the order in which they appear in the document.
 
-**This attribute allows the elimination of parser-blocking JavaScript where the browser would have to load and evaluate scripts before continuing to parse. `async` has a similar effect in this case.**
+This attribute allows the elimination of parser-blocking JavaScript where the browser would have to load and evaluate scripts before continuing to parse. `async` has a similar effect in this case.
 
 For instance:
 
