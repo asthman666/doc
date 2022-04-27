@@ -1,5 +1,4 @@
-
-# prototype
+# prototype (原型)
 
     if (!String.prototype.trim) {
         String.prototype.trim = function () {
@@ -7,6 +6,7 @@
         };
     }
 
+> [prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
 
 > [object-defineproperty-or-prototype](https://stackoverflow.com/questions/38961414/object-defineproperty-or-prototype)
 
