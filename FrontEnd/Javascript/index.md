@@ -10,8 +10,6 @@
 
 [ES6](ES6/index)
 
-[React](React/index)
-
 [Tip](Tip)
 
 [bubbling vs capturing](bubbling vs capturing)
