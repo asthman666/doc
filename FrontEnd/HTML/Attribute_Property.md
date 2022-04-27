@@ -34,3 +34,10 @@ The `HTMLInputElement` interface provides special properties and methods for man
 <img src="HTMLInputElement.png">
 
 The `HTMLInputElement.disabled` is a boolean value that **reflects** the disabled HTML attribute, which indicates whether the control is disabled.
+
+# Exmaples
+
+`class` is a html attribute
+`className` is a DOM property
+
+using `className` in javascript to manipulate the `class` of html
