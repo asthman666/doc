@@ -45,4 +45,11 @@
 
         $env:path
 
+10. Get the `dll` file full name
+
+        [System.Reflection.AssemblyName]::GetAssemblyName("C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\SSRS\Neodynamic.ReportingServices.Barcode.dll").FullName
+
+        Neodynamic.ReportingServices.Barcode, Version=5.0.2000.0, Culture=neutral, PublicKeyToken=c6b33c3093a0d4cd
+
+
 [authenticodesignature](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-authenticodesignature)
