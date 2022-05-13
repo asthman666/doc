@@ -1,3 +1,5 @@
+[SQL Server Property](SQL Server Property)
+
 [Tips](Tips)
 
 [SQL Server Base](SQL Server Base)
@@ -13,10 +15,6 @@
 [Date](SQL Server Date)
 
 [Index](SQL Server index)
-
-[Tips](SQL Server Tips)
-
-[SQL Server Property](SQL Server Property)
 
 [SQL Server Compare](SQL Server Compare)
 
