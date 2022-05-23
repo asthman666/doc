@@ -1,8 +1,8 @@
 [SQL Server Property](SQL Server Property)
 
-[Tips](Tips)
-
 [SQL Server Base](SQL Server Base)
+
+[Saving results as csv file with headers in Sql Server Management Studio](Saving results as csv file with headers in Sql Server Management Studio)
 
 [Store Procedure And Function](Store Procedure And Function)
 
