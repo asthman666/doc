@@ -13,3 +13,7 @@
     select DB_ID()
 
     select DB_ID(N'db_name')
+
+## find the object_id
+
+    select OBJECT_ID(N'table_name')
