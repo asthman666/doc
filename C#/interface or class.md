@@ -40,8 +40,9 @@
 	// Summary:
 	//     Represents a strongly typed list of objects that can be accessed by index. Provides
 	//     methods to search, sort, and manipulate lists.
-    public class List<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IList<T>, IReadOnlyCollection<T>, IReadOnlyList<T>, ICollection, IList {
-        // ...
+    public class List<T> : ICollection<T>, IEnumerable<T>, IEnumerable, IList<T>, IReadOnlyCollection<T>, IReadOnlyList<T>, ICollection, IList {        
+		public void ForEach(Action<T> action);
+		// more ...
     }
 
 [Ilist or list](https://stackoverflow.com/questions/8717582/why-use-ilist-or-list)
