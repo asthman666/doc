@@ -8,6 +8,8 @@
 
 [CLR via C#](CLR via C%23/index)
 
+[Collection](Collection/index)
+
 [.NET blog](NET blog/index)
 
 [Develop Command](Develop Command/index)
@@ -21,8 +23,6 @@
 [eShopOnWeb](eShopOnWeb/index)
 
 [Refactor](Refactor/index)
-
-[collection](collection)
 
 [dictionary](dictionary)
 
@@ -47,8 +47,6 @@
 [abstract](abstract)
 
 [Delegate](Delegate)
-
-[interface or class](interface or class)
 
 [Access Modifiers](Access Modifiers)
 
