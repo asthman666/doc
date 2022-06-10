@@ -1,10 +1,13 @@
 How to do DI?
 
+.NET supports the dependency injection (DI) software design pattern, which is a technique for achieving Inversion of Control (IoC) between classes and their dependencies.
+## Dependency injection addresses these problems through:
+
 1. Use an interface or base class to abstract the dependency implementation
 2. Registration of the dependency in a service container. ASP.NET Core provides a build-in service container, IServiceProvider.
 3. Injection of the service into the constructor of the class where it's used. The framework takes on the responsibility of creating an instance of the dependency and disposing of it when it's no longer needed.
    
-Service lifetimes
+## Service lifetimes
 
 Services can be registered with one of the following lifetimes:
 
@@ -24,7 +27,7 @@ Services can be registered with one of the following lifetimes:
     /// </summary>
     Transient
 
-Read Source Code
+## Read Source Code
 
 * **IServiceCollection**
 
@@ -248,7 +251,20 @@ My Code:
         }
     }
 
+## Dependency injection into controllers in ASP.NET Core
+### Constructor Injection
+Services are added as a constructor parameter, and the runtime resolves the service from the service container. Services are typically defined using interfaces. 
+
+### Action injection with FromServices
+The `FromServicesAttribute` enables injecting a service directly into an action method without using constructor injection:
+
+    public IActionResult About([FromServices] IDateTime dateTime)
+    {
+        return Content( $"Current server time: {dateTime.Now}");
+    }
 
 [Framework-provided services](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0#framework-provided-services)
 
 [Services injected into Startup](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0)
+
+[dependency-injection](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/dependency-injection?view=aspnetcore-6.0)
