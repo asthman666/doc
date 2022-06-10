@@ -10,6 +10,8 @@
 
 [Collection](Collection/index)
 
+[Exception](Exception/index)
+
 [.NET blog](NET blog/index)
 
 [Develop Command](Develop Command/index)

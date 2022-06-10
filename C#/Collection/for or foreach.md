@@ -57,7 +57,7 @@ For example, suppose you have a class TempRecord that represents the temperature
         }
     }    
 
-## use `for` to iterate the IList
+## Using for to iterate the IList
 
 Because of the `IList` interface has the `T this[int index] { get; set; }` method, the class that implements the `IList` can be accessed by the indexer and can be iterated by the `for` keyword.
 
