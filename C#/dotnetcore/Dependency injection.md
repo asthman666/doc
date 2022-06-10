@@ -34,8 +34,9 @@ Read Source Code
 
         }
 
-* **ServiceCollection**
+* **ServiceCollection**        
 
+        // 实现 IServiceCollection
         public class ServiceCollection : IServiceCollection 
         {
             // 定义了一个私有只读的 List<ServiceDescriptor> 泛型成员
@@ -45,6 +46,7 @@ Read Source Code
 
             public bool IsReadOnly => false;
 
+            // implement the indexer in IList interface
             public ServiceDescriptor this[int index]
             {
                 get
