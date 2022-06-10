@@ -110,6 +110,5 @@ The use of the this keyword in the previous example causes this constructor to b
 
         throw new StudentNotFoundException("The student cannot be found.", "John");
 
-        
-
+> [how-to-create-localized-exception-messages](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-localized-exception-messages)        
 
