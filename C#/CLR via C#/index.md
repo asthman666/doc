@@ -24,6 +24,8 @@
 
 [chapter20-异常和状态管理](chapter20-异常和状态管理/NOTE)
 
+[chapter21-托管堆和垃圾回收](chapter21-托管堆和垃圾回收/NOTE)
+
 [chapter23-程序集加载和反射](chapter23-程序集加载和反射/NOTE)
 
 [chapter24-运行时的序列化](chapter24-运行时的序列化/NOTE)
