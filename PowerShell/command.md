@@ -1,10 +1,14 @@
 1. Get Process
 
-        Get-Process -Name "winword" | Select-String -Pattern Id
         Get-Process -Name "iisexpress"
+        Get-Process -Name "*Wall*"
         Get-Process
 
         Get-Process -Id 12323
+
+    1.1 Get Thread from Process
+
+    [use-powershell-to-explore-process-threads-in-windows](https://devblogs.microsoft.com/scripting/use-powershell-to-explore-process-threads-in-windows/)
 
 2. Stop Process use Name
    
