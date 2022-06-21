@@ -49,7 +49,11 @@
 
         $env:path
 
-10. Get the `dll` file full name
+10. How to get all Environment variables in powershell.
+
+        Get-ChildItem env:
+
+11. Get the `dll` file full name
 
         [System.Reflection.AssemblyName]::GetAssemblyName("C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\SSRS\Neodynamic.ReportingServices.Barcode.dll").FullName
 
