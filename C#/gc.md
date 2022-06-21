@@ -36,11 +36,22 @@ CLR 初始化垃圾回收器，它会分配一段内存用来存储和管理对�
 
 当垃圾收集被触发，垃圾收集器会回收被死对象占据的内存。这个回收过程会把活对象紧凑的移动到一起，确保分配在受管理堆上的对象在一起。
 
-堆可以被认为堆积成两个堆，**大对象堆**和**小对象堆**。
+## 大对象堆(LOH)
 
+堆可以被认为堆积成两个堆，**大对象堆(LOH)**和**小对象堆(SOH)**。因为大对象的 `compact` 是昂贵的，所以垃圾回收器把大对象放在 **大对象堆(LOH)**。
+
+如果一个对象大于等于 85,000 bytes(83KB)，这个对象被认为是一个大对象。
+
+ **LOH** is sometimes referred to as generation 3. Generation 3 is a physical generation that's logically collected as part of generation 2.
+
+Large objects belong to generation 2 because they are collected only during a generation 2 collection.
+
+Generations provide a logical view of the GC heap. Physically, objects live in managed heap segments. A managed heap segment is a chunk of memory that the GC reserves from the OS by calling the VirtualAlloc function on behalf of managed code. **When the CLR is loaded, the GC allocates two initial heap segments: one for small objects (the small object heap, or SOH), and one for large objects (the large object heap)**.
+
+> [large-object-heap](https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/large-object-heap)
 ## Generations
 
-堆被组织成**代**(Generations)，可以处理长活和短活的对象。垃圾收集主要发生在短活对象的回收，这些短活对象一般仅占据堆的一小部分。在堆上一共有3代对象：
+堆被组织成**代**(Generations)，目的是提高垃圾回收的性能。可以区别处理长活和短活的对象。垃圾收集主要发生在短活对象的回收，这些短活对象一般仅占据堆的一小部分。在堆上一共有3代对象：
 
 1. Generation 0
 
