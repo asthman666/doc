@@ -19,3 +19,8 @@
 ## Restart IIS (run as administrator)
 
 	iisreset 
+
+## open windows Startup folder 
+
+1. `Windows logo key + R`
+2. type `shell:startup`, then select OK.
