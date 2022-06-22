@@ -67,4 +67,4 @@ So we can use encapsulation to solve the issue, see below:
     }
 ```     
 
-After these changes, we use the same logic in frontend and backend. We can test it easily, because we only need to test `NeedReOrder` property in backend, not both.
+After these changes, we use the same logic in frontend and backend. We can test it easily, because we only need to test `NeedReOrder` property in backend or fontend, not both.
