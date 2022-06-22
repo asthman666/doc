@@ -29,7 +29,7 @@ I can simplify the problem to below:
         show()
     </script>
 
-Q: Did you think above code work correctly? 
+Q: Did you think above code that can show `.item-list-header`?
 
 A: Of course not.
 
@@ -37,14 +37,14 @@ A: Of course not.
         Name
     </div>     
 
-Look at this piece of code, this element's visible is controlled by 
+Look at this piece of code, this element's visible is controlled by two pieces of code:
 
 * `Model.Items != null && Model.Items.Count > 0`
 * `show()` javascript function
 
 If `Model.Items == null` or `Model.Items.Count == 0`, this HTML code will not be generated, the javascript code can never make it visible.
 
-So we should change code like:
+So we should change code:
 
 ```diff
     <div class="item-list">
