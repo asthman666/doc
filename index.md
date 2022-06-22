@@ -28,8 +28,6 @@
 
 [Life](Life/index)
 
-[Idea](Idea/index)
-
 [ErrorLog](ErrorLog/index)
 
 [Principle](Principle/index)
