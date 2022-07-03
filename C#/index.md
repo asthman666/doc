@@ -10,8 +10,6 @@
 
 [CLR via C#](CLR via C%23/index)
 
-[Collection](Collection/index)
-
 [Exception](Exception/index)
 
 [.NET blog](NET blog/index)
