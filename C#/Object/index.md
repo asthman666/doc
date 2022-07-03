@@ -1,3 +1,5 @@
+[type](type)
+
 [char](char)
 
 [string](string)

@@ -52,8 +52,6 @@
 
 [Access Modifiers](Access Modifiers)
 
-[type](type)
-
 [nullable](nullable)
 
 [Puppeteer Sharp](Puppeteer Sharp)
