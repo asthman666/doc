@@ -4,8 +4,8 @@
     {
         private static unsafe bool EqualsHelper(string strA, string strB)
         {
-        int length = strA.Length;
-        fixed (char* chPtr1 = &strA.m_firstChar)
+            int length = strA.Length;
+            fixed (char* chPtr1 = &strA.m_firstChar)
             fixed (char* chPtr2 = &strB.m_firstChar)
             {
                 char* chPtr3 = chPtr1;
@@ -68,8 +68,10 @@
         }
     }
 
-* `String`类重载了`==`操作符，`==`比较的是字符串本身
+* `String` 类重载了 `==` 操作符，`==` 比较的是字符串本身
+
 * `String`重写了`object`类的`bool Equals(object obj)`方法，`Equals`比较的是字符串本身
+
 * 如果要比较`String`的引用，可以使用
 
         string ss1 = "N";
@@ -108,4 +110,11 @@
             }  
         }
       
-* 如果一个类没有重载`==`，那么默认使用`object`的`==`
+* 如果一个类没有重载 `==`，那么默认使用 `object` 的 `==`
+
+## String concatenation
+
+When one or both operands are of the `string`, the `+` operator concatenates the string representations of its operands(the string representation of `null` is an **empty string**).
+
+    Console.WriteLine(null + "Nothing to add."); // Nothing to add.
+    Console.WriteLine($"{null}Nothing to add."); // Nothing to add.
