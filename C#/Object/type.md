@@ -7,7 +7,8 @@
     Object -> System.Array(abstract class)
     
     Object -> ValueType(abstract class)
-
+    
+    Object -> ValueType -> System.Char(struct)
     Object -> ValueType -> System.Enum(class)
     Object -> ValueType -> Boolean(struct)
     Object -> ValueType -> System.Byte(struct)
