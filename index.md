@@ -14,6 +14,8 @@
 
 [Git](Git/index)
 
+[Shell](Shell/index)
+
 [PowerShell](PowerShell/index)
 
 [Windows Command](Windows Command/index)
