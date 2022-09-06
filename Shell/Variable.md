@@ -2,3 +2,4 @@
 	echo '${a}' # output: ${a}
 	echo "${a}" # output: pwd
 	echo `${a}` # /Users/xxx/tmp
+	echo $(a)   # /Users/xxx/tmp

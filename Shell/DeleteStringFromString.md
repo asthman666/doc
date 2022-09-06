@@ -9,6 +9,8 @@
 	filenames=("dotnet.string.txt", "java.string.txt")
 	echo ${filenames[@]%%.*} # dotnet java
 	echo ${filenames[*]%.*}  # dotnet.string java.string
+	
+	a=".pl"; echo ${a#*.} # pl
 
 > [Shell-Parameter-Expansion](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
 
