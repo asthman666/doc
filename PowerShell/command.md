@@ -48,6 +48,8 @@
 9. How to get Environment Path in powershell.    
 
         $env:path
+        
+        $env:ASPNETCORE_ENVIRONMENT = "Local"
 
 10. How to get all Environment variables in powershell.
 
