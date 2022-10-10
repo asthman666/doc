@@ -93,6 +93,13 @@ The source code of `Host.CreateDefaultBuilder(string[] args)`
             return builder;
         }
 
+## IServiceProvider
+
+    public interface IServiceProvider
+    {
+        object? GetService(Type serviceType);
+    }
+
 ## Framework-provided services
 
 The following services are registered automatically:
