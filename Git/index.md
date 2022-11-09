@@ -21,3 +21,5 @@
 [How to revert some files to specific commit version](How to revert some files to specific commit version)
 
 [git bash](git bash)
+
+[git add](git add)
