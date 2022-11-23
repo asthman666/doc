@@ -6,6 +6,8 @@
 
 [C#](C%23/index)
 
+[Ruby](Ruby/index)
+
 [FrontEnd](FrontEnd/index)
 
 [Database](Database/index)
