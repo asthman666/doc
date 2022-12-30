@@ -23,3 +23,5 @@
 [git bash](git bash)
 
 [git add](git add)
+
+[git config](git config)
