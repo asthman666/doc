@@ -58,3 +58,30 @@ The splat operator unpacks an array passed to a function so that each element is
 	2
 	3
 	=> nil	
+	
+	
+	x && y
+	# returns x if x is false
+	# returns y if x is true
+	
+	# +────────+─────────────+─────────+
+	# | X      | Y           | Return  |
+	# +────────+─────────────+─────────+
+	# | false  | true/false  | X       |
+	# | true   | true        | Y       |
+	# | true   | false       | Y       |
+	# +────────+─────────────+─────────+	
+	
+
+	x || y 
+	# returns x if x is true without evaluating y
+	# returns y if x is false
+	
+	# +───────+─────────────+─────────+
+	# | X     | Y           | X || Y  |
+	# +───────+─────────────+─────────+
+	# | true  | true/false  | X       |
+	# | false | true/false  | Y       |
+	# +───────+─────────────+─────────+	
+	
+	
