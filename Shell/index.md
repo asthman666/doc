@@ -9,3 +9,5 @@
 [set](set)
 
 [Useful Commands](Useful Commands)
+
+[shellcheck](shellcheck)
