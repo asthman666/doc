@@ -1,4 +1,11 @@
   
-  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+# Set the SSL version
+    
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
   
-  Invoke-WebRequest [url]
+# Request a url
+
+    Invoke-WebRequest [url]
+
+    Invoke-WebRequest https://www.baidu.com
+
