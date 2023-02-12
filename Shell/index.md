@@ -11,3 +11,5 @@
 [Useful Commands](Useful Commands)
 
 [shellcheck](shellcheck)
+
+[Certificate](Certificate)
