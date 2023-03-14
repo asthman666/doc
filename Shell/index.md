@@ -13,3 +13,5 @@
 [shellcheck](shellcheck)
 
 [Certificate](Certificate)
+
+[curl](curl)
