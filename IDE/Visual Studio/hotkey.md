@@ -64,3 +64,8 @@
     To format a selection: `Ctrl+K, Ctrl+F`
 
     To format a document: `Ctrl+K, Ctrl+D`
+
+13. close tab
+    
+    Add CTRL+W as a Global shortcut for Window.CloseDocumentWindow
+    Remove the CTRL+W shortcut for Edit.SelectCurrentWord
