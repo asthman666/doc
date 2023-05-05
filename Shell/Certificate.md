@@ -1,6 +1,10 @@
+## Verify the domain certificate
+
+    echo | openssl s_client -connect xxx.com:443 -showcerts -verify 1
+
 ## Check the domain certificate
 
-    openssl s_client -showcerts -servername xxx.com -connect xxx.com:444
+    echo | openssl s_client -showcerts -servername xxx.com -connect xxx.com:444
 
 ### example:
 
