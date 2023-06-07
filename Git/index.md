@@ -25,3 +25,5 @@
 [git add](git add)
 
 [git config](git config)
+
+[How to create file execute mode permissions in Git on Windows](How to create file execute mode permissions in Git on Windows)
