@@ -22,40 +22,44 @@
 
     <img src="find_port_pid.png"> 
 
-4. Stop Process use Id
+    3.1 Find the Process user pid
+
+        tasklist /svc /FI "PID eq [pid]"
+
+5. Stop Process use Id
    
         taskkill /f /pid  43208
 
     <img src="killpid.png">
 
-5. Add Content for File
+6. Add Content for File
 
         Add-Content -Path 'C:\log.txt' -Value 'test string'
 
-6. Print
+7. Print
 
         Write-Host 'Hello, World!'
 
-7. Try-Catch
+8. Try-Catch
 
         try { NonsenseString }
         catch { Write-Host "error: " + $_ }
 
-8. How to get powershell version?
+9. How to get powershell version?
 
         $PSVersionTable
 
-9. How to get Environment Path in powershell.    
+10. How to get Environment Path in powershell.    
 
         $env:path
         
         $env:ASPNETCORE_ENVIRONMENT = "Local"
 
-10. How to get all Environment variables in powershell.
+11. How to get all Environment variables in powershell.
 
         Get-ChildItem env:
 
-11. Get the `dll` file full name
+12. Get the `dll` file full name
 
         [System.Reflection.AssemblyName]::GetAssemblyName("C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\SSRS\Neodynamic.ReportingServices.Barcode.dll").FullName
 
