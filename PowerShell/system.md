@@ -1,0 +1,5 @@
+  Restart-Computer
+
+  systeminfo
+
+  
