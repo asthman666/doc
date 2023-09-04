@@ -7,3 +7,5 @@
 [system](system)
 
 [Alias](Alias)
+
+[nslookup](nslookup)
